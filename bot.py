@@ -8,7 +8,7 @@ a = "asdf"
 
 app = discord.Client()
 
-token = "NTYxMTA0MjMyNzMyODE5NDc2.D39sQg.MzKr4h4lLbs2pxCIx3AnSOmI9hk"
+token = access_token
  
 @app.event
 async def on_ready():
@@ -1021,4 +1021,5 @@ async def on_message(message):
             await app.send_message(message.channel, 'ㅅㅂ 잔다매')
             
  
+access_token = os.environ["BOT_TOKEN"]
 app.run(token)
