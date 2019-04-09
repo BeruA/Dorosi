@@ -263,7 +263,7 @@ async def on_message(message):
                 f = open(message.server.id + " _ " + mention_id + ".txt", 'r')
                 past_warn = f.read()
                 f.close()
-                ram = random.randint(-5, 10)
+                ram = random.randint(-20, 50)
                 now_warn = int(past_warn) + int(ram)
                 now_warn = str(now_warn)
                 ram = str(ram)
@@ -275,12 +275,12 @@ async def on_message(message):
                 if int(ram) == 0:
                     await app.send_message(message.channel, "엌ㅋㅋㅋ0개 걸림ㅋㅋㅋㅋ")
 
-                elif int(ram) > 0 and int(ram) < 7:
+                elif int(ram) > 0 and int(ram) < 30:
                     await app.send_message(message.channel, "동네 힘쌘<@" + message.author.id + "> 가 <@" + mention_id + "> 한테 똥 `" + ram + "`개를 선물!!\n")
                     time.sleep(0.5)
                     await app.send_message(message.channel, "<@" + mention_id + "> 는 벌써 `똥`이 `" + now_warn + "개`나 가지고 있네ㅋㅋㅋ")
 
-                elif int(ram) >= 7:
+                elif int(ram) >= 30:
                     await app.send_message(message.channel, "대!!!!!!박!!!!!!!!!oh yeah!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
                     time.sleep(0.5)
                     await app.send_message(message.channel, "동네 힘쌘<@" + message.author.id + "> 가 <@" + mention_id + "> 한테 똥 `" + ram + "`개를 선물!!\n")
