@@ -808,69 +808,70 @@ async def on_message(message):
         
         if msg is None:
             await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
-            
-        elif message.content.startswith("가위"):
-            await app.send_message(message.channel, ":fist:")
-            time.sleep(1.0)
-            role = ""
-            member = discord.utils.get(app.get_all_members(), id=message.author.id)
-            for i in message.server.roles:
-                if i.name == "패배자":
-                    role = i
-                    break
-            await app.add_roles(member, role)
-            embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
-            embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-            embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
-            await app.send_message(message.channel, embed=embed)
-            
-        elif message.content.startswith("보"):
-            await app.send_message(message.channel, ":v:")
-            time.sleep(1.0)
-            role = ""
-            member = discord.utils.get(app.get_all_members(), id=message.author.id)
-            for i in message.server.roles:
-                if i.name == "패배자":
-                    role = i
-                    break
-            await app.add_roles(member, role)
-            embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
-            embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-            embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
-            await app.send_message(message.channel, embed=embed)
-            
-        elif message.content.startswith("ㅗ"):
-            await app.send_message(message.channel, ":middle_finger:")
-            time.sleep(1.0)
-            role = ""
-            member = discord.utils.get(app.get_all_members(), id=message.author.id)
-            for i in message.server.roles:
-                if i.name == "패배자":
-                    role = i
-                    break
-            await app.add_roles(member, role)
-            embed = discord.Embed(title="FUCK YOU", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
-            embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-            embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
-            await app.send_message(message.channel, embed=embed)
-            
-        elif message.content.startswith("바위"):
-            await app.send_message(message.channel, ":raised_hand:")
-            time.sleep(1.0)
-            role = ""
-            member = discord.utils.get(app.get_all_members(), id=message.author.id)
-            for i in message.server.roles:
-                if i.name == "패배자":
-                    role = i
-                    break
-            await app.add_roles(member, role)
-            embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
-            embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-            embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
-            await app.send_message(message.channel, embed=embed)
-            
+
         else:
-            await app.send_message(message.channel, 'ㅅㅂ 똑바로 내라;;')
+            elif message.content.startswith("가위"):
+                await app.send_message(message.channel, ":fist:")
+                time.sleep(1.0)
+                role = ""
+                member = discord.utils.get(app.get_all_members(), id=message.author.id)
+                for i in message.server.roles:
+                    if i.name == "패배자":
+                        role = i
+                        break
+                await app.add_roles(member, role)
+                embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
+                embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
+                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                await app.send_message(message.channel, embed=embed)
+                
+            elif message.content.startswith("바위"):
+                await app.send_message(message.channel, ":raised_hand:")
+                time.sleep(1.0)
+                role = ""
+                member = discord.utils.get(app.get_all_members(), id=message.author.id)
+                for i in message.server.roles:
+                    if i.name == "패배자":
+                        role = i
+                        break
+                await app.add_roles(member, role)
+                embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
+                embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
+                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                await app.send_message(message.channel, embed=embed)
+                
+            elif message.content.startswith("보"):
+                await app.send_message(message.channel, ":v:")
+                time.sleep(1.0)
+                role = ""
+                member = discord.utils.get(app.get_all_members(), id=message.author.id)
+                for i in message.server.roles:
+                    if i.name == "패배자":
+                        role = i
+                        break
+                await app.add_roles(member, role)
+                embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
+                embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
+                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                await app.send_message(message.channel, embed=embed)
+
+            elif message.content.startswith("ㅗ"):
+                await app.send_message(message.channel, ":middle_finger:")
+                time.sleep(1.0)
+                role = ""
+                member = discord.utils.get(app.get_all_members(), id=message.author.id)
+                for i in message.server.roles:
+                    if i.name == "패배자":
+                        role = i
+                        break
+                await app.add_roles(member, role)
+                embed = discord.Embed(title="FUCK YOU", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
+                embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
+                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                await app.send_message(message.channel, embed=embed)
+                
+            else:
+                await app.send_message(message.channel, 'ㅅㅂ 똑바로 내라;;')
 
     elif message.content.startswith('야! 김윤수'):
         await app.send_message(message.channel, '마약이 필요해!')
