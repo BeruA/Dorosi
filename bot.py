@@ -804,10 +804,9 @@ async def on_message(message):
             
     elif message.content.startswith('야! 가위바위보'):
         await app.send_message(message.channel, 'ㄱㄱ')
-        msg = await app.wait_for_message(timeout=5.0, author=message.author)
 
-        elif message.content.startswith(':fist:'):
-            await app.send_message(message.channel, ':raised_hand:')
+        if message.content.startswith(":fist:"):
+            await app.send_message(message.channel, ":raised_hand:")
             time.sleep(1.0)
             role = ""
             member = discord.utils.get(app.get_all_members(), id=vmention_id)
@@ -822,8 +821,8 @@ async def on_message(message):
             await app.send_message(message.channel, embed=embed)
             os.remove(" v " + message.server.id + " _ " + vmention_id + ".txt")
             
-        elif message.content.startswith(':v:'):
-            await app.send_message(message.channel, ':fist:')
+        elif message.content.startswith(":v:"):
+            await app.send_message(message.channel, ":fist:")
             time.sleep(1.0)
             role = ""
             member = discord.utils.get(app.get_all_members(), id=vmention_id)
@@ -838,8 +837,8 @@ async def on_message(message):
             await app.send_message(message.channel, embed=embed)
             os.remove(" v " + message.server.id + " _ " + vmention_id + ".txt")
             
-        elif message.content.startswith(':raised_hand:'):
-            await app.send_message(message.channel, ':v:')
+        elif message.content.startswith(":raised_hand:"):
+            await app.send_message(message.channel, ":v:")
             time.sleep(1.0)
             role = ""
             member = discord.utils.get(app.get_all_members(), id=vmention_id)
@@ -854,8 +853,8 @@ async def on_message(message):
             await app.send_message(message.channel, embed=embed)
             os.remove(" v " + message.server.id + " _ " + vmention_id + ".txt")
             
-        elif message.content.startswith(':middle_finger:'):
-            await app.send_message(message.channel, ':middle_finger:')
+        elif message.content.startswith(":middle_finger:"):
+            await app.send_message(message.channel, ":middle_finger:")
             time.sleep(1.0)
             role = ""
             member = discord.utils.get(app.get_all_members(), id=vmention_id)
@@ -869,9 +868,6 @@ async def on_message(message):
             embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
             await app.send_message(message.channel, embed=embed)
             os.remove(" v " + message.server.id + " _ " + vmention_id + ".txt")
-            
-        elif msg is None:
-            await app.send_message(message.channel, 'ㅅㅂ 하자면서 왜 안해;;')
             
         else:
             await app.send_message(message.channel, 'ㅅㅂ 똑바로 내라;;')
