@@ -806,7 +806,7 @@ async def on_message(message):
         await app.send_message(message.channel, 'ㄱㄱ')
         msg = await app.wait_for_message(timeout=5.0, author=message.author)
         
-        if msg is None:
+        elif msg is None:
             await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
 
         elif msg is not None:
