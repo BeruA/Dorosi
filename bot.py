@@ -806,7 +806,7 @@ async def on_message(message):
         await app.send_message(message.channel, 'ㄱㄱ')
         msg = await app.wait_for_message(timeout=5.0, author=message.author)
         
-        if msg is not None:
+        if msg:
             elif message.content.startswith("가위"):
                 await app.send_message(message.channel, ":fist:")
                 time.sleep(1.0)
