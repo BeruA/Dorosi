@@ -870,7 +870,7 @@ async def on_message(message):
             else:
                 await app.send_message(message.channel, 'ㅅㅂ 똑바로 내라;;')
                 
-        else:
+        elif msg is None:
             await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
 
     elif message.content.startswith('야! 김윤수'):
