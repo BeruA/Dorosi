@@ -820,7 +820,7 @@ async def on_message(message):
                 await app.add_roles(member, role)
                 embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
                 embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                embed.set_image(url="https://i.imgur.com/f9aJbig.png")
                 await app.send_message(message.channel, embed=embed)
                 
             elif msg.content == '바위':
@@ -835,7 +835,7 @@ async def on_message(message):
                 await app.add_roles(member, role)
                 embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
                 embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                embed.set_image(url="https://i.imgur.com/f9aJbig.png")
                 await app.send_message(message.channel, embed=embed)
                 
             elif msg.content == '보':
@@ -850,7 +850,7 @@ async def on_message(message):
                 await app.add_roles(member, role)
                 embed = discord.Embed(title="YOU LOSE", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
                 embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                embed.set_image(url="https://i.imgur.com/f9aJbig.png")
                 await app.send_message(message.channel, embed=embed)
 
             elif msg.content == 'ㅗ':
@@ -865,7 +865,7 @@ async def on_message(message):
                 await app.add_roles(member, role)
                 embed = discord.Embed(title="FUCK YOU", description="우우우우우우우우우우우우우우우우우우우", color=0xFC67E0)
                 embed.set_footer(text = "나의승리! 다음번까지 왜 졌는지 생각해봐라 하하하하하")
-                embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
+                embed.set_image(url="https://i.imgur.com/6apxKji.png")
                 await app.send_message(message.channel, embed=embed)
                 
             else:
