@@ -809,7 +809,7 @@ async def on_message(message):
         if msg is None:
             await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
 
-        elif:
+        elif msg is not None:
             elif message.content.startswith("가위"):
                 await app.send_message(message.channel, ":fist:")
                 time.sleep(1.0)
