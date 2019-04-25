@@ -806,10 +806,7 @@ async def on_message(message):
         await app.send_message(message.channel, 'ㄱㄱ')
         msg = await app.wait_for_message(timeout=5.0, author=message.author)
         
-        elif msg is None:
-            await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
-
-        elif msg is not None:
+        if msg is not None:
             elif message.content.startswith("가위"):
                 await app.send_message(message.channel, ":fist:")
                 time.sleep(1.0)
@@ -872,6 +869,9 @@ async def on_message(message):
                 
             else:
                 await app.send_message(message.channel, 'ㅅㅂ 똑바로 내라;;')
+                
+        else:
+            await app.send_message(message.channel, 'ㅅㅂ 왜 안내')
 
     elif message.content.startswith('야! 김윤수'):
         await app.send_message(message.channel, '마약이 필요해!')
