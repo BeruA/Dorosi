@@ -805,9 +805,10 @@ async def on_message(message):
     elif message.content.startswith('야! 가위바위보'):
         await app.send_message(message.channel, 'ㄱㄱ')
         msg = await app.wait_for_message(timeout=5.0, author=message.author)
+        content = '가위' or '바위' or '보' or 'ㅗ'
         
         if msg:
-            elif message.content.startswith("가위"):
+            if msg.content == '가위':
                 await app.send_message(message.channel, ":fist:")
                 time.sleep(1.0)
                 role = ""
@@ -822,7 +823,7 @@ async def on_message(message):
                 embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
                 await app.send_message(message.channel, embed=embed)
                 
-            elif message.content.startswith("바위"):
+            elif msg.content == '바위':
                 await app.send_message(message.channel, ":raised_hand:")
                 time.sleep(1.0)
                 role = ""
@@ -837,7 +838,7 @@ async def on_message(message):
                 embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
                 await app.send_message(message.channel, embed=embed)
                 
-            elif message.content.startswith("보"):
+            elif msg.content == '보':
                 await app.send_message(message.channel, ":v:")
                 time.sleep(1.0)
                 role = ""
@@ -852,7 +853,7 @@ async def on_message(message):
                 embed.set_image(url="https://i.imgur.com/F0c4egd.jpg")
                 await app.send_message(message.channel, embed=embed)
 
-            elif message.content.startswith("ㅗ"):
+            elif msg.content == 'ㅗ':
                 await app.send_message(message.channel, ":middle_finger:")
                 time.sleep(1.0)
                 role = ""
