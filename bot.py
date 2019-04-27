@@ -809,8 +809,7 @@ async def on_message(message):
         
         if msg:
             if msg.content == '가위':
-                embed.set_image(url="https://i.imgur.com/0R5wEsV.png")
-                await app.send_message(message.channel, embed=embed)
+                await app.send_message(message.channel, 'https://i.imgur.com/0R5wEsV.png')
                 time.sleep(1.0)
                 role = ""
                 member = discord.utils.get(app.get_all_members(), id=message.author.id)
@@ -825,8 +824,7 @@ async def on_message(message):
                 await app.send_message(message.channel, embed=embed)
                 
             elif msg.content == '바위':
-                embed.set_image(url="https://i.imgur.com/Ie11b5F.png")
-                await app.send_message(message.channel, embed=embed)
+                await app.send_message(message.channel, 'https://i.imgur.com/Ie11b5F.png')
                 time.sleep(1.0)
                 role = ""
                 member = discord.utils.get(app.get_all_members(), id=message.author.id)
@@ -841,8 +839,7 @@ async def on_message(message):
                 await app.send_message(message.channel, embed=embed)
                 
             elif msg.content == '보':
-                embed.set_image(url="https://i.imgur.com/63HTy9g.png")
-                await app.send_message(message.channel, embed=embed)
+                await app.send_message(message.channel, 'https://i.imgur.com/63HTy9g.png')
                 time.sleep(1.0)
                 role = ""
                 member = discord.utils.get(app.get_all_members(), id=message.author.id)
@@ -857,8 +854,7 @@ async def on_message(message):
                 await app.send_message(message.channel, embed=embed)
 
             elif msg.content == 'ㅗ':
-                embed.set_image(url="https://i.imgur.com/4LVY9kE.png")
-                await app.send_message(message.channel, embed=embed)
+                await app.send_message(message.channel, 'https://i.imgur.com/4LVY9kE.png')
                 time.sleep(1.0)
                 role = ""
                 member = discord.utils.get(app.get_all_members(), id=message.author.id)
