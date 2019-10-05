@@ -355,12 +355,6 @@ async def on_message(message):
     if message.content.startswith('봇'):
         await app.send_message(message.channel, '나 부름?')
 
-    if message.content.startswith('심심'):
-        await app.send_message(message.channel, '나랑 놀자')
-
-    if message.content.startswith('똥'):
-        await app.send_message(message.channel, '스프른이 좋아함')
-
     if message.content.startswith('야! 현탁이'):
         await app.send_message(message.channel, '횬탁이')
 
@@ -387,9 +381,6 @@ async def on_message(message):
 
     if message.content.startswith('야! 가브릴'):
         await app.send_message(message.channel, '으으;;')
-
-    if message.content.startswith('노'):
-        await app.send_message(message.channel, '노? 신고합니다')
 
     if message.content.startswith('야! 동'):
         await app.send_message(message.channel, 'https://www.pornhub.com/')
