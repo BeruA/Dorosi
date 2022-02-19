@@ -136,9 +136,20 @@ async def on_message(message):
 
     if message.content.startswith('청성!'):
         await channel.send('청성!')
+
+    if message.content.startswith('오목'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/909772224985169920/61f6a43cf48d37add2a45df32f82f4d845bf7f3bf7b82e7a731acdc628dba4a3.png')
             
     if message.content.startswith('점호 인원보고 총원'):
         await channel.send('쉬어!')
+
+    if message.content.startswith('에어컨'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
+
+    if message.content.startswith("**조배호**"):
+        await channel.send('https://cdn.discordapp.com/attachments/383295111951548437/867050775426105384/trev.mp4
+https://cdn.discordapp.com/attachments/383295111951548437/867050780539355196/trev_.mp4
+https://cdn.discordapp.com/attachments/383295111951548437/867050789067292682/trev.mp4')
 
 
 @client.event
