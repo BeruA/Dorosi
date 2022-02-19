@@ -51,9 +51,11 @@ async def on_message(message):
         await channel.send(target.mention)
         await channel.send(target.mention)
 
-
     if message.content.startswith('야! 안녕'):
         await channel.send('반가워 시발아!')
+
+    if message.content.startswith('문어'):
+        await channel.send('https://media.discordapp.net/attachments/847126893534117890/944739580270223370/unknown_1.mp4')
 
     if message.content.startswith('야! 명령어'):
         await channel.send('니가 알아서 찾으셈')
