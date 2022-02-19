@@ -36,10 +36,10 @@ async def on_message(message):
     if message.content.startswith('야! 얘 킥좀'):
         embed = discord.Embed(title=target.mention + "추방 투표",description="당신의 선택은?", color=0x00aaaa)
         embed.add_field(name="추방🦶", value="킥하자", inline=False)
-        embed.add_field(name="밴👍", value="밴하자", inline=False)
+        embed.add_field(name="밴💢", value="밴하자", inline=False)
         msg = await message.channel.send(embed=embed)
         await msg.add_reaction("🦶") #step
-        await msg.add_reaction("👍") #stun
+        await msg.add_reaction("💢") #stun
 
 @client.event
 async def on_reaction_add(reaction, user):
@@ -47,7 +47,7 @@ async def on_reaction_add(reaction, user):
         return None
     if str(reaction.emoji) == "🦶":
         await reaction.message.channel.send(user.name + ": 킥 ㄱ")
-    if str(reaction.emoji) == "👍":
+    if str(reaction.emoji) == "💢":
         await reaction.message.channel.send(user.name + ": 밴 ㄱ")
 
 
