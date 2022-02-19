@@ -147,9 +147,7 @@ async def on_message(message):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
 
     if message.content.startswith("**조배호**"):
-        await channel.send('https://cdn.discordapp.com/attachments/383295111951548437/867050775426105384/trev.mp4
-https://cdn.discordapp.com/attachments/383295111951548437/867050780539355196/trev_.mp4
-https://cdn.discordapp.com/attachments/383295111951548437/867050789067292682/trev.mp4')
+        await channel.send('https://cdn.discordapp.com/attachments/383295111951548437/867050775426105384/trev.mp4 https://cdn.discordapp.com/attachments/383295111951548437/867050780539355196/trev_.mp4 https://cdn.discordapp.com/attachments/383295111951548437/867050789067292682/trev.mp4')
 
 
 @client.event
