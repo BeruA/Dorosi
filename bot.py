@@ -151,6 +151,8 @@ async def on_reaction_add(reaction, user):
         await reaction.message.channel.send(user.name + " : 밴 ㄱ")
     if str(reaction.emoji) == "👍":
         await reaction.message.channel.send("굳이요")
+    if str(reaction.emoji) == "💣":
+        await reaction.message.channel.send("https://youtu.be/hlR45geEIpY")
     if str(reaction.emoji) == "🇨🇳":
         await reaction.message.channel.send("https://cdn.discordapp.com/attachments/884787722819092521/908537510974615572/SPOILER_super_idol_.mp4")
 
