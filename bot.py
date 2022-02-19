@@ -30,6 +30,10 @@ async def bt(games):
 
 @client.event
 async def on_message(message):
+
+    channel = message.channel
+    message.content
+
     if message.content.startswith('야! 얘 킥좀'):
         target = message.mentions[0]
         embed = discord.Embed(title=target.mention + "추방 투표",description="당신의 선택은?", color=0x00aaaa)
@@ -52,6 +56,9 @@ async def on_reaction_add(reaction, user):
 # 메시지에 반응 달면 체팅해줌
 @client.event
 async def on_reaction_add(reaction):
+    channel = message.channel
+    message.content
+
     if str(reaction.emoji) == "👍":
         await reaction.message.channel.send("굳이요")
 
