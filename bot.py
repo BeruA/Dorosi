@@ -28,25 +28,6 @@ async def bt(games):
             await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
             await asyncio.sleep(1)
 
-@client.event
-async def on_message(message):
-
-    if message.content.startswith('야! 얘 킥좀'):
-        target = message.mentions[0]
-        await channel.send(target.mention + "추방 투표!!!")
-        msg = await message.channel.send(target.mention + "추방 투표!!!")
-        await msg.add_reaction("🦶") #step
-        await msg.add_reaction("💢") #stun
-
-@client.event
-async def on_reaction_add(reaction, user):
-    if user.bot == 1: #봇이면 패스
-        return None
-    if str(reaction.emoji) == "🦶":
-        await reaction.message.channel.send(user.name + ": 킥 ㄱ")
-    if str(reaction.emoji) == "💢":
-        await reaction.message.channel.send(user.name + ": 밴 ㄱ")
-
 # 봇이 특정 메세지를 받고 인식하는 코드
 @client.event
 async def on_message(message):
@@ -55,6 +36,13 @@ async def on_message(message):
 
     if message.author.bot:
         return None
+
+    if message.content.startswith('야! 얘 킥좀'):
+        target = message.mentions[0]
+        await channel.send(target.mention + "추방 투표!!!")
+        msg = await message.channel.send(target.mention + "추방 투표!!!")
+        await msg.add_reaction("🦶") #step
+        await msg.add_reaction("💢") #stun
 
     if message.content.startswith('야! 안녕'):
         await channel.send('반가워 시발아!')
@@ -140,6 +128,15 @@ async def on_message(message):
             await channel.send('불러놓고 말을 안해;;')
         else:
             await channel.send('{0.content}'.format(msg))
+
+@client.event
+async def on_reaction_add(reaction, user):
+    if user.bot == 1: #봇이면 패스
+        return None
+    if str(reaction.emoji) == "🦶":
+        await reaction.message.channel.send(user.name + ": 킥 ㄱ")
+    if str(reaction.emoji) == "💢":
+        await reaction.message.channel.send(user.name + ": 밴 ㄱ")
 
 
 
