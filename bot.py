@@ -128,13 +128,13 @@ async def on_message(message):
         else:
             await channel.send('{0.content}'.format(msg))
 
-    elif message.content.startswith('아야중대 보고!'):
+    if message.content.startswith('아야중대 보고!'):
         await channel.send('보고!')
 
-        elif message.content.startswith('충성!'):
+        if message.content.startswith('충성!'):
             await channel.send('충성!')
 
-            elif message.content.startswith('아야중대 인원보고 총원 열외 현재원 준비 끝!'):
+            if message.content.startswith('아야중대 인원보고 총원 열외 현재원 준비 끝!'):
                 await channel.send('쉬어!')
 
 
