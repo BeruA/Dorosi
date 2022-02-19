@@ -50,32 +50,6 @@ async def on_reaction_add(reaction, user):
     if str(reaction.emoji) == "💢":
         await reaction.message.channel.send(user.name + ": 밴 ㄱ")
 
-
-# 메시지에 반응 달면 체팅해줌
-@client.event
-async def on_reaction_add(reaction):
-    channel = message.channel
-    message.content
-
-    if str(reaction.emoji) == "👍":
-        await reaction.message.channel.send("굳이요")
-
-    if str(reaction.emoji) == "👏":
-        await reaction.message.channel.send("8888888888888888888888")
-
-    if str(reaction.emoji) == "😭":
-        await reaction.message.channel.send("ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ")
-
-    if str(reaction.emoji) == "🖕":
-        await reaction.message.channel.send("ㅗ")
-
-    if str(reaction.emoji) == "👀":
-        await reaction.message.channel.send("띠용?")
-
-    if str(reaction.emoji) == "🤔":
-        await reaction.message.channel.send("흠......")
-
-
 # 봇이 특정 메세지를 받고 인식하는 코드
 @client.event
 async def on_message(message):
