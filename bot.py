@@ -146,9 +146,15 @@ async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
         return None
     if str(reaction.emoji) == "🦶":
-        await reaction.message.channel.send(user.name + ": 킥 ㄱ")
+        await reaction.message.channel.send(user.name + " : 킥 ㄱ")
     if str(reaction.emoji) == "💢":
-        await reaction.message.channel.send(user.name + ": 밴 ㄱ")
+        await reaction.message.channel.send(user.name + " : 밴 ㄱ")
+    if str(reaction.emoji) == "👍":
+        await reaction.message.channel.send("굳이요")
+    if str(reaction.emoji) == "🇨🇳":
+        await reaction.message.channel.send("https://cdn.discordapp.com/attachments/884787722819092521/908537510974615572/SPOILER_super_idol_.mp4")
+
+
 
 
 
