@@ -33,6 +33,7 @@ async def on_message(message):
 
     if message.content.startswith('야! 얘 킥좀'):
         target = message.mentions[0]
+        await channel.send(target.mention + "추방 투표!!!")
         msg = await message.channel.send(target.mention + "추방 투표!!!")
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
