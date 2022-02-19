@@ -143,6 +143,9 @@ async def on_message(message):
     if message.content.startswith('점호 인원보고 총원'):
         await channel.send('쉬어!')
 
+    if message.content.startswith('일남'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/901454917221355570/ar10232106.png')
+
     if message.content.startswith('에어컨'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
 
