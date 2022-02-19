@@ -43,6 +43,20 @@ async def on_message(message):
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
 
+    if message.content.startswith('오백배'):
+        target = message.mentions[0]
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+        await channel.send('target.mention')
+
+
     if message.content.startswith('야! 안녕'):
         await channel.send('반가워 시발아!')
 
