@@ -33,10 +33,7 @@ async def on_message(message):
 
     if message.content.startswith('야! 얘 킥좀'):
         target = message.mentions[0]
-        embed = discord.Embed(title=target.mention + "추방 투표",description="당신의 선택은?", color=0x00aaaa)
-        embed.add_field(name="추방🦶", value="킥하자", inline=False)
-        embed.add_field(name="밴💢", value="밴하자", inline=False)
-        msg = await message.channel.send(embed=embed)
+        msg = await message.channel.send('target.mention + "추방 투표!!!"')
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
 
