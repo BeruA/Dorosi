@@ -128,7 +128,7 @@ async def on_message(message):
         else:
             await channel.send('{0.content}'.format(msg))
 
-    if message.content.startswith('아야중대 보고!'):
+    if message.content.startswith('보고!'):
         await channel.send('보고!')
 
     if message.content.startswith('충성!'):
@@ -137,7 +137,7 @@ async def on_message(message):
     if message.content.startswith('청성!'):
         await channel.send('청성!')
             
-    if message.content.startswith('아야중대 저녘점호 인원보고 총원'):
+    if message.content.startswith('점호 인원보고 총원'):
         await channel.send('쉬어!')
 
 
