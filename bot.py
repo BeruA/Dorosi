@@ -6,7 +6,7 @@ import time
 client = discord.Client()
 
 # 생성된 토큰을 입력해준다.
-token = 'ODkzMTcwMTQyODI4MTY3MjA4.YVXjhA.8Yso2FjPiYx6BDoxxLv6t5_ZuDc'
+token = 'OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.vYSMAmFvcrGNynK9oMb4yK014XE'
 
 
 # 봇이 구동되었을 때 보여지는 코드
@@ -148,4 +148,4 @@ async def on_message(message):
 
 
 
-client.run('ODkzMTcwMTQyODI4MTY3MjA4.YVXjhA.8Yso2FjPiYx6BDoxxLv6t5_ZuDc')
+client.run('OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.vYSMAmFvcrGNynK9oMb4yK014XE')
