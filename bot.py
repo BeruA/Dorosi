@@ -130,11 +130,11 @@ async def on_message(message):
 
     if message.content.startswith('아야중대 보고!'):
         await channel.send('보고!')
-        await asyncio.sleep(5)
+        await time.sleep(5)
 
         if message.content.startswith('충성!'):
             await channel.send('충성!')
-            await asyncio.sleep(30)
+            await time.sleep(30)
 
             if message.content.startswith('아야중대 인원보고 총원 열외 현재원 준비 끝!'):
                 await channel.send('쉬어!')
