@@ -132,7 +132,7 @@ async def on_message(message):
         await channel.send('보고!')
         await time.sleep(5)
 
-        elif message.content.startswith('충성!'):
+        if message.content.startswith('충성!'):
             await channel.send('충성!')
             await time.sleep(30)
 
