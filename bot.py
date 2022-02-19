@@ -6,7 +6,7 @@ import time
 client = discord.Client()
 
 # 생성된 토큰을 입력해준다.
-token = "토큰"
+token = "ODkzMTcwMTQyODI4MTY3MjA4.YVXjhA.8Yso2FjPiYx6BDoxxLv6t5_ZuDc"
 
 
 # 봇이 구동되었을 때 보여지는 코드
