@@ -28,6 +28,26 @@ async def bt(games):
             await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
             await asyncio.sleep(1)
 
+@client.event
+async def on_message(message):
+    if message.content.startswith('야! 얘 킥좀'):
+        target = message.mentions[0]
+        embed = discord.Embed(title=target.mention + "추방 투표",description="당신의 선택은?", color=0x00aaaa)
+        embed.add_field(name="추방🦶", value="킥하자", inline=False)
+        embed.add_field(name="밴👍", value="밴하자", inline=False)
+        msg = await message.channel.send(embed=embed)
+        await msg.add_reaction("🦶") #step
+        await msg.add_reaction("👍") #stun
+
+@client.event
+async def on_reaction_add(reaction, user):
+    if user.bot == 1: #봇이면 패스
+        return None
+    if str(reaction.emoji) == "🦶":
+        await reaction.message.channel.send(user.name + ": 킥 ㄱ")
+    if str(reaction.emoji) == "👍":
+        await reaction.message.channel.send(user.name + ": 밴 ㄱ")
+
 
 # 메시지에 반응 달면 체팅해줌
 @client.event
