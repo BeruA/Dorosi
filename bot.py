@@ -5,6 +5,8 @@ import time
 
 client = discord.Client()
 
+token = 'OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.vYSMAmFvcrGNynK9oMb4yK014XE'
+
 
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
