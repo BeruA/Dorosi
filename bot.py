@@ -80,7 +80,7 @@ async def on_message(message):
         dice = str(dice)
         await channel.send("" + dice + "!!!!!")
 
-    if message.content.startswith("야! 사다리타기"):
+    if message.content.startswith('야! 사다리타기'):
         await channel.send('따라다라 딴! 딴!')
         time.sleep(0.5)
         await channel.send('따라다라 딴! 딴!')
