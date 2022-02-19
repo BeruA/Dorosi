@@ -128,6 +128,22 @@ async def on_message(message):
         else:
             await channel.send('{0.content}'.format(msg))
 
+    elif message.content.startswith('아야중대 보고!'):
+        await channel.send('보고!')
+
+        if message.content.startswith('충성!'):
+            await channel.send('충성!')
+
+            if message.content.startswith('아야중대 인원보고 총원 열외 현재원 준비 끝!'):
+                await channel.send('쉬어!')
+
+
+            else:
+                await channel.send('점호가 장난인가? 처음부터 다시!!!')
+
+        else:
+            await channel.send('점호가 장난인가? 처음부터 다시!!!')
+
 @client.event
 async def on_reaction_add(reaction, user):
     if user.bot == 1: #봇이면 패스
