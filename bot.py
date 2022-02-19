@@ -45,16 +45,11 @@ async def on_message(message):
 
     if message.content.startswith('오백배'):
         target = message.mentions[0]
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
-        await channel.send('target.mention')
+        await channel.send(target.mention)
+        await channel.send(target.mention)
+        await channel.send(target.mention)
+        await channel.send(target.mention)
+        await channel.send(target.mention)
 
 
     if message.content.startswith('야! 안녕'):
