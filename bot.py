@@ -57,10 +57,10 @@ async def on_message(message):
     if message.content.startswith('문어'):
         await channel.send('https://media.discordapp.net/attachments/847126893534117890/944739580270223370/unknown_1.mp4')
 
-    if messagee.content.startswith('야! 명령어'):
+    if message.content.startswith('야! 명령어'):
         await channel.send('니가 알아서 찾으셈')
 
-    if messagee.content.startswith('도로시 신작'):
+    if message.content.startswith('도로시 신작'):
         await channel.send('https://youtu.be/dggymuhfbcI')
 
     if message.content == "수정":
