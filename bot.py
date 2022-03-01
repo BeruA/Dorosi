@@ -163,7 +163,7 @@ async def on_message(message):
     if message.content.startswith('도로시'):
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/948145013206949918/IMG_2337.png')
 
-    if message.content.startswith('ㅅㅂ'):
+    if message.content.startswith('ㅆㅃ'):
         await channel.send('ㅅㅂ')
 
     if message.content.startswith('님들'):
