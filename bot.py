@@ -175,8 +175,8 @@ async def on_message(message):
     if message.content.startswith('어쩔티비'):
         await channel.send('저쩔티비')
 
-    if message.content.startswith('님들'):
-        await channel.send('왜')
+    if message.content.startswith('치킨'):
+        await channel.send('https://media.discordapp.net/attachments/847126944360431646/932275088819118110/dcbest-20220116-230811-001.jpg')
 
     if message.content.startswith('...'):
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948146865369669682/2.png')
