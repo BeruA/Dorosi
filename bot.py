@@ -198,7 +198,7 @@ async def on_message(message):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
 
     if message.content.startswith('브베'):
-        await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/835502919277215794/20210413_001801.png')
 
     if message.content.startswith('할까'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/838075427011821639/Screenshot_20210319-122910_Twitter.png')
@@ -222,7 +222,7 @@ async def on_message(message):
         await channel.send('https://cdn.discordapp.com/attachments/835782065306992651/846669510752337930/4b2e91c5ed64bc9b.mp4')
 
     if message.content.startswith('돌'):
-        await channel.send('https://cdn.discordapp.com/attachments/835782065306992651/846669510752337930/4b2e91c5ed64bc9b.mp4')
+        await channel.send('https://media.discordapp.net/attachments/810490718979489845/948183674568966204/unknown.png')
 
     if message.content.startswith('여유만만'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/853565574457589760/unknown-19.png')
