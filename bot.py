@@ -60,7 +60,7 @@ async def on_message(message):
     if message.content.startswith('야! 명령어'):
         await channel.send('니가 알아서 찾으셈')
 
-    if message.content.startswith('도로시 신작'):
+    if message.content.startswith('신작'):
         await channel.send('https://youtu.be/dggymuhfbcI')
 
     if message.content == "수정":
@@ -157,8 +157,30 @@ async def on_message(message):
     if message.content.startswith('점호 인원보고 총원'):
         await channel.send('쉬어!')
 
-    if message.content.startswith('일남'):
+    if message.content.startswith('큰일'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/901454917221355570/ar10232106.png')
+
+    if message.content.startswith('도로시'):
+        await channel.send('https://media.discordapp.net/attachments/803945796151279636/948145013206949918/IMG_2337.png')
+
+    if message.content.startswith('ㅅㅂ'):
+        await channel.send('ㅅㅂ')
+
+    if message.content.startswith('님들'):
+        await channel.send('왜')
+
+    if message.content.startswith('ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ'):
+        await channel.send('https://media.discordapp.net/attachments/803945796151279636/948146187553361950/IMG_2341.png')
+
+    if message.content.startswith('어쩔티비'):
+        await channel.send('저쩔티비')
+
+    if message.content.startswith('님들'):
+        await channel.send('왜')
+
+    if message.content.startswith('...'):
+        await channel.send('https://media.discordapp.net/attachments/860770065568890881/948146865369669682/2.png')
+
 
     if message.content.startswith('에어컨'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
