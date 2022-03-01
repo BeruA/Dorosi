@@ -37,7 +37,7 @@ async def on_message(message):
     if message.author.bot:
         return None
 
-    if message.content.startswith('!킥'):
+    if message.content.startswith('킥좀 '):
         target = message.mentions[0]
         msg = await message.channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
@@ -169,8 +169,102 @@ async def on_message(message):
     if message.content.startswith('님들'):
         await channel.send('왜')
 
- if message.content.startswith('ㅂㅅ'):
+    if message.content.startswith('ㅂㅅ'):
         await channel.send('어휴ㅉㅉㅉㅉ')
+
+    if message.content.startswith('허벌'):
+        await channel.send('합성계 최고 허벌후장대회가 열렸다. 예선 경기 끝에 남은 것은 김굴뚝, 큐브1171, 류한수 세 명이었다.')
+        time.sleep(2)
+        await channel.send('결승전 경기는 자유종목이었고, 각자 후장 안에 가장 커다란 걸 집어넣어 온 선수가 승리하는 것으로 결정됐다.')
+        time.sleep(2)
+        await channel.send('첫 선수인 김굴뚝이 가랑이를 벌리자 안에서 한조각이 기어나왔다 그러고선 관객과 심사위원들로부터 우레와 같은 박수갈채가 쏟아져 나왔다.')
+        time.sleep(2)
+        await channel.send('그 후, 큐브1171이 가랑이를 벌렸다. 아무런 것도 나오지 않자 관객들이 의아해 하자, 멀라훕거리는 소리가 들리기 시작했다. 그러자 조배호가 큐브1171의 후장에서 민우당 중진들과 함께 튀어나와 대회장 밖으로 사라졌다. 관객들은 대단하다는 반응과 더럽다는 반응이 섞인 모습이었다.')
+        time.sleep(4)
+        await channel.send('마지막은 류한수의 차례였다. 하지만 류한수 가랑이 사이에서 나온건 조그만 김된장 하나뿐이지 않은가? 다른 참가자들은 류한수를 비웃으며 손가락질 했다.')
+        time.sleep(2)
+        await channel.send('그러자 김된장은 유쾌하게 자기가 나온 구멍을 가리키며 외쳤다.')
+        time.sleep(5)
+        await channel.send('**“월곶탐험에 오신 걸 환영합니다!!”**')
+
+
+    if message.content.startswith('노홍철'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/825755424404799488/EwBRceUVEAIcEJi.png')
+
+    if message.content.startswith('나이'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/825756942978121728/unknown.png')
+
+    if message.content.startswith('짱구'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
+
+    if message.content.startswith('브베'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
+
+    if message.content.startswith('할까'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/838075427011821639/Screenshot_20210319-122910_Twitter.png')
+
+    if message.content.startswith('대도'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/839141955908272168/unknown.png')
+
+    if message.content.startswith('톰'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/840803835656273950/unknown.png')
+
+    if message.content.startswith('마리오'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/842759365969707058/SPOILER_.mp4')
+
+    if message.content.startswith('귀갱'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/842369911045095424/2019_12_13_00_06_53_273.mp4')
+
+    if message.content.startswith('혼자'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/842369911045095424/2019_12_13_00_06_53_273.mp4')
+
+    if message.content.startswith('빈모드'):
+        await channel.send('https://cdn.discordapp.com/attachments/835782065306992651/846669510752337930/4b2e91c5ed64bc9b.mp4')
+
+    if message.content.startswith('돌'):
+        await channel.send('https://cdn.discordapp.com/attachments/835782065306992651/846669510752337930/4b2e91c5ed64bc9b.mp4')
+
+    if message.content.startswith('여유만만'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/853565574457589760/unknown-19.png')
+
+    if message.content.startswith('네류'):
+        await channel.send('https://images-ext-1.discordapp.net/external/t8Has7FcLiB1B752L_ndepQTLfsQglqd6oMDJhPGt_Q/https/media.discordapp.net/attachments/491939455993774080/829287313833590804/20210407_182721.gif')
+
+    if message.content.startswith('정모'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/856147263003557898/image0.png')
+
+    if message.content.startswith('오모리'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/853612755188711445/23ea8f842119299a.mp4')
+
+    if message.content.startswith('약속'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/857269797179228180/oyakusoku.mp4')
+
+    if message.content.startswith('밀집'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/859330982695141376/7185ec6cb2a2a4db43e2bfd5439279371e4d18843e33de31c2bb835d852c8b84.png')
+
+    if message.content.startswith('나츠키'):
+        await channel.send('https://media.discordapp.net/attachments/810490718979489845/861979377171169300/SPOILER_064c244122f56a8723a270068f0c8875.png')
+
+    if message.content.startswith('모울'):
+        await channel.send('https://cdn.discordapp.com/attachments/828954273005568020/860912532801191976/2021-07-04_00-57-31.mp4')
+
+    if message.content.startswith('수학'):
+        await channel.send('https://cdn.discordapp.com/attachments/810490718979489845/860914143594807376/2021-07-04_01-01-55.mp4')
+
+    if message.content.startswith('마크'):
+        await channel.send('https://twitter.com/ayylmaotv/status/1117457494920527872?s=20')
+
+    if message.content.startswith('선풍기'):
+        await channel.send('https://cdn.discordapp.com/attachments/854352795813150740/866932414286528552/VID-20210630-WA0017.mp4')
+
+    if message.content.startswith('히나'):
+        await channel.send('https://media.discordapp.net/attachments/810490718979489845/948168546008051762/Screenshot_20201102-222800_YouTube.jpg')
+
+    if message.content.startswith('다천사'):
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/868202048598986772/108.png')
+
+    if message.content.startswith('운동'):
+        await channel.send('https://images-ext-2.discordapp.net/external/z4ZyZRHrnDayVtxd7w5dzWpt3o7MX3LTbmt-UGvDObk/https/media.discordapp.net/attachments/804829274384498761/939227928535924847/the_boys-4-1.gif')
 
     if message.content.startswith('미나'):
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
@@ -199,7 +293,7 @@ async def on_message(message):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
 
     if message.content.startswith("**조배호**"):
-        await channel.send('https://cdn.discordapp.com/attachments/383295111951548437/867050775426105384/trev.mp4 https://cdn.discordapp.com/attachments/383295111951548437/867050780539355196/trev_.mp4 https://cdn.discordapp.com/attachments/383295111951548437/867050789067292682/trev.mp4')
+        await channel.send('https://cdn.discordapp.com/attachments/561510770723127309/867291290106331136/video0.mp4https://cdn.discordapp.com/attachments/561510770723127309/867291290466779176/video1.mp4https://cdn.discordapp.com/attachments/561510770723127309/867291290797735956/video2.mp4')
 
 
 @client.event
