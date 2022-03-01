@@ -37,7 +37,7 @@ async def on_message(message):
     if message.author.bot:
         return None
 
-    if message.content.startswith('야! 얘 킥좀'):
+    if message.content.startswith('!킥'):
         target = message.mentions[0]
         msg = await message.channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
@@ -168,6 +168,9 @@ async def on_message(message):
 
     if message.content.startswith('님들'):
         await channel.send('왜')
+
+ if message.content.startswith('ㅂㅅ'):
+        await channel.send('어휴ㅉㅉㅉㅉ')
 
     if message.content.startswith('미나'):
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
