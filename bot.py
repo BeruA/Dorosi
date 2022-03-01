@@ -169,6 +169,16 @@ async def on_message(message):
     if message.content.startswith('님들'):
         await channel.send('왜')
 
+    if message.content.startswith('미나'):
+        await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
+
+    if message.content.startswith('보지'):
+        await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
+
+    if message.content.startswith('잠만'):
+        time.sleep(3)
+        await channel.send('https://media.discordapp.net/attachments/803945796151279636/910233954823581776/1157A2C9-38D1-4F53-BA03-0601866107E9.jpg')
+
     if message.content.startswith('ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ'):
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/948146187553361950/IMG_2341.png')
 
