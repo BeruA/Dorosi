@@ -102,7 +102,7 @@ async def on_message(message):
         await channel.send(anserresult)
 
     if '배호' in message.content:
-        anser = "굶어 먹지마 죽어 치킨 피자 https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
+        anser = "굶어 먹지마 죽어 치킨 https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
@@ -152,14 +152,14 @@ async def on_message(message):
     if '혼자' in message.content:
         await channel.send('저쩔티비')
 
-    if '어쩔티비' in message.content:
+    if '종이' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/848574228830617610/image0.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '슈' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/859329369359908884/Screenshot_20210627-071738_Discord-Beta.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '강태산' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/859331627263328256/unknown.png')
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
@@ -379,7 +379,7 @@ async def on_message(message):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
 
     if message.content.startswith("**조배호**"):
-        await channel.send('https://cdn.discordapp.com/attachments/561510770723127309/867291290106331136/video0.mp4https://cdn.discordapp.com/attachments/561510770723127309/867291290466779176/video1.mp4https://cdn.discordapp.com/attachments/561510770723127309/867291290797735956/video2.mp4')
+        await channel.send('https://cdn.discordapp.com/attachments/561510770723127309/867291290106331136/video0.mp4 https://cdn.discordapp.com/attachments/561510770723127309/867291290466779176/video1.mp4 https://cdn.discordapp.com/attachments/561510770723127309/867291290797735956/video2.mp4')
 
 @client.event
 async def on_reaction_add(reaction, user):
