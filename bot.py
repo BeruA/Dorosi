@@ -102,7 +102,7 @@ async def on_message(message):
         await channel.send(anserresult)
 
     if '배호' in message.content:
-        anser = "굶어 먹지마 죽어 https://media.discordapp.net/attachments/812665665437696020/909799908138156062/Screenshot_20211115-022709_YouTube.png https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
+        anser = "멀라훕! https://media.discordapp.net/attachments/797862892291751978/798195017416048651/ErctcYFVgAA_BsH.png https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png https://media.discordapp.net/attachments/812665665437696020/909799908138156062/Screenshot_20211115-022709_YouTube.png https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
@@ -124,6 +124,21 @@ async def on_message(message):
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
+
+    if '아이고' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/792743630140866572/792759057060200488/32709ee9-0d73-4ac4-82ce-9266e6ff7700216w640.png')
+
+    if '솔로이스트' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/783003781935792139/787583175312146432/99A2CA455B85FBB208.png')
+
+    if '자취' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/746389180720087051/782663158799007754/image0.png')
+
+    if '이현호' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/746389180720087051/775341921324761088/unknown_copy.png')
+
+    if '극장판' in message.content:
+        await channel.send('1기 액션가면VS그레그레마왕\n2기 부리부리왕국의 보물\n3기 흑부리 마왕의 야망\n4기 핸더랜드의 대모험\n5기 암흑마왕 대추적\n6기 돼지발굽 대작전\n7기 폭발 온천 부글부글 대작전\n8기 폭풍을 부르는 정글\n9기 어른제국의 역습\n10기 태풍을 부르는 장엄한 전설의 결투\n11기 태풍을 부르는 영광의 불고기로드\n12기 폭풍을 부르는 석양의 떡잎마을방범대\n13기 전설을 부르는 부리나케 딱 3분 대진격\n14기 전설을 부르는 전설의 춤을춰라 아미고\n15기 전설을 부르는 노래하는 엉덩이 폭탄\n16기 엄청난 태풍을 부르는 금창의 용사\n17기 떡잎마을 야생왕국\n18기 초시공 전설을 부르는 아우라의 신부\n19기 황금스파이 대작전\n20기 폭풍을 부르는 나와 우주의 프린세스\n21기:크레용신짱! 바카우마츠! B급 음식 서바이벌!\n﻿22기:검은태풍을 부르는 엄청난양의 보물!!\n23기:태풍을 부르는 엄청난 양의 보물\n24기:전설을 부르는 파이어의 비밀\n25기:멸망의카운트다운! 파괴의 기계대전!!\n26기:태풍을부르는 검은 암살자의 대소동\n27기: 영광의 액션가면 vs 구리구리몬\n28기:죽음을 부르는 검은 무사기사단\n29기:검은태풍을 부르는 떡잎마을 파괴사건\n30기:태풍을 부르는 알수없는 그림자\n31기:전설을 부르는 1개의 빛의 열쇠\n32기:엄청난 태풍을 부르는 빛의 거울의 진실\n33기:엄청난 파괴를 알리는 3개의 원자폭탄\n34기:엄청난 위험을 부르는 괴물 대소동\n35기:얼수없는 1명의 칼을든 사나이\n36기:엄청난 태풍을 부르는 액션가면 조종사건\n37기:위험을 알리는 3명의무사단\n38기:엄청난 태풍을 부르는 1명의 연금술사\n39기:알수없는 인간실종사건의 진실\n40기:위험을 알리는 짱구가족 죽음의 진실\n41기:엄청난 태풍을 부르는 짱구와 휜둥이의 짱아 구출 대사건\n42기:태풍을 부르는 짱구의 비밀기지\n43기:알수없는 총을든 3명의 특공대\n44기:짱구가족 사람 살인사건﻿\n45기:알수없는 인간 조종사의 진실\n46기:피할수 없는 지구 멸망사건\n47기:엄청난 태풍을 부르는 쥬라기 시대 대소동\n48기:검은태풍을 부르는 멸망의 원석\n49기:떡잎방위대의 1개의 트라포이스\n50기:태풍을 부르는 지구 인간 실종사건\n51기:태풍을 부르는 짱구 영화속의 사람 출동\n52기: 엄청난 영광의 흰둥이 괴물사건')
 
     if '곰' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/816677434866270258/Screenshot_20210303-232421_Discord.jpg')
@@ -150,7 +165,10 @@ async def on_message(message):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/846007444416364554/-Xz6gjxfSwWEPbJGvTom6JJKeWdkXOl3QT2sWYPvGMUJnH2k0iMq501t4dzVsosJPqmGQ8S3R6-4LaRZv9EqF9nEQhdpoy4L_nn-.png')
 
     if '혼자' in message.content:
-        await channel.send('저쩔티비')
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/848574228830617610/image0.png')
+    
+    if '내신' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/847126893534117890/901130523118829598/ar0030.png')
 
     if '종이' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/848574228830617610/image0.png')
@@ -275,8 +293,8 @@ async def on_message(message):
     if '작업' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/908722808996122694/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '보추' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/847126944360431646/906985872904290304/unknown.png')
 
     if message.content.startswith('보고!'):
         await channel.send('보고!')
