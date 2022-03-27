@@ -102,7 +102,7 @@ async def on_message(message):
         await channel.send(anserresult)
 
     if '배호' in message.content:
-        anser = "굶어 먹지마 죽어 치킨 https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
+        anser = "굶어 먹지마 죽어 https://media.discordapp.net/attachments/812665665437696020/909799908138156062/Screenshot_20211115-022709_YouTube.png https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
@@ -239,41 +239,41 @@ async def on_message(message):
     if '레드존' in message.content:
         await channel.send('https://cdn.discordapp.com/attachments/856781757546102795/896473145890979860/ertert-1.mp4')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '지메' in message.content:
+        await channel.send('https://cdn.discordapp.com/attachments/220651459237249024/899300601341571102/geometry_dash.mp4')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '오기' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/900402987002896394/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '댄로댄' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/900443260550524938/07-23_SD_360p_MEDIUM_FR30.mp4')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '배신' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/901112663025790996/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '백신' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/901125247032492042/ar10222335.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '진배' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/901125245623238737/ar110222345.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '류담' in message.content:
+        await channel.send('둥탁뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅자여러분안녕하십니까달인을만나다의류담입니다오늘이시간에는십육년동안악기를연구해오신해오신악기의달인뮤뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅뱅모든생활용품들을다연주가가능하신거죠?아알겠습니다그러면자여기숟가락이것도가능하세요?무엇이무엇이무엇이똑같을까자여기서배에힘을주고아아아아아아아아아아아아아둥둥둥탕탕탕탕뽀오얀담배연기화려한차림속에호올로비쳐진내애에히릿초라하아안수평안에세월속')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '고추' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/914206441655640094/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '지니어스' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/910955822245380136/Screenshot_20210823-211619_Discord-Beta.jpg')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '토론' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/910728523830943796/Screenshot_20211118-115759_Drive.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '땜빵' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/909764676492099644/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '작업' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/908722808996122694/unknown.png')
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
