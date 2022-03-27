@@ -63,9 +63,6 @@ async def on_message(message):
         channels_500x_enabled.remove(channel)
         return
 
-    if '조배호' in message.content:
-        await channel.send('https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png')
-
     if message.content.startswith('눈나'):
         await channel.send('https://images-ext-1.discordapp.net/external/sWESaX7qOJS0n8xmLrCH1cxhzBfO1ojC4KHHEbf6P-E/%3Fc%3DVjFfZGlzY29yZA/https/media.tenor.com/Fh58fxSBt08AAAPo/ouro-kronii-wink.mp4')
 
@@ -98,6 +95,13 @@ async def on_message(message):
         await channel.send(anserresult)
 
     if '보지' in message.content:
+        anser = "굶어 먹지마 죽어 치킨 피자 떡볶이"
+        anserchoice = anser.split(" ")
+        ansernumber = random.randint(1, len(anserchoice))
+        anserresult = anserchoice[ansernumber - 1]
+        await channel.send(anserresult)
+
+    if '배호' in message.content:
         anser = "굶어 먹지마 죽어 치킨 피자 떡볶이"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
