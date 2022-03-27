@@ -49,13 +49,13 @@ async def on_message(message):
             time.sleep(3)
             i += 1          # i를 1씩 증가시킴
             if on_message(message):
-                if 'ㅅㅂ' in message.content:
+                if "ㅅㅂ" in message.content:
                     await channel.send('ㅈㅅ')
                     break
             if i == 500:    # i가 100일 때
                 break
 
-    if '조배호' in message.content:
+    if "조배호" in message.content:
         await channel.send('https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png')
 
     if message.content.startswith('눈나'):
