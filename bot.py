@@ -35,6 +35,9 @@ async def on_message(message):
         return None
 
     if '킥' in message.content:
+        if not message.mentions:
+            return
+
         target = message.mentions[0]
         msg = await channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
@@ -76,6 +79,9 @@ async def on_message(message):
         await channel.send('https://youtu.be/dggymuhfbcI')
 
     if '사랑해' in message.content:
+        if not message.mentions:
+            return
+
         target = message.mentions[0]
         msg = await message.channel.send(target.mention + " 사랑해💕💕")
         await asyncio.sleep(5)
