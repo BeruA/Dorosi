@@ -4,7 +4,9 @@ import asyncio
 import time
 import os
 
-client = discord.Client()
+client = discord.Client(
+    intents=discord.Intents.all()
+)
 
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
