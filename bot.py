@@ -146,7 +146,7 @@ async def on_message(message):
     if '나이' in message.content:
         if '나이스' in message.content:
             return
-        else await channel.send('https://media.discordappㅔ.net/attachments/812665665437696020/825756942978121728/unknown.png')
+        else await channel.send('https://media.discordapp.net/attachments/812665665437696020/825756942978121728/unknown.png'):
 
     if '짱구' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
