@@ -75,7 +75,7 @@ async def on_message(message):
     if message.content.startswith('신작'):
         await channel.send('https://youtu.be/dggymuhfbcI')
 
-    if message.content.startswith('사랑해 '):
+    if '사랑해' in message.content:
         target = message.mentions[0]
         msg = await message.channel.send(target.mention + " 사랑해💕💕")
         await asyncio.sleep(5)
