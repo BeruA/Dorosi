@@ -34,7 +34,7 @@ async def on_message(message):
     if message.author.bot:
         return None
 
-    if '킥' message.content:
+    if '킥' in message.content:
         target = message.mentions[0]
         msg = await channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
