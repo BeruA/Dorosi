@@ -15,9 +15,10 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-    discord.Game("감자요리")
+    global is_500x_enabled
+
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
-    await bt(['마감', '응가', '숙면', '식사', '물밥', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹시'])
+    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
 
 async def bt(games):
     await client.wait_until_ready()
@@ -28,7 +29,6 @@ async def bt(games):
             await asyncio.sleep(10)
 
 @client.event
-global is_500x_enabled
 async def on_message(message):
     channel = message.channel
 
