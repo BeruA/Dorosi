@@ -34,49 +34,52 @@ async def on_message(message):
     if message.author.bot:
         return None
 
-    if message.content.startswith('킥좀 '):
+    if '킥' message.content:
         target = message.mentions[0]
         msg = await channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
 
-    if message.content.startswith('오백배'):
-        target = message.mentions[0]
-        i = 0
-        while True:    # 무한 루프
-            await channel.send(target.mention)
-            print(i)
-            time.sleep(3)
-            i += 1          # i를 1씩 증가시킴
-            if on_message(message):
-                if "ㅅㅂ" in message.content:
-                    await channel.send('ㅈㅅ')
-                    break
-            if i == 500:    # i가 100일 때
-                break
+    if '오백배' in message.content:
+        if not message.mentions:
+            return
 
-    if "조배호" in message.content:
+        target = message.mentions[0]
+        is_500x_enabled = true
+        for i in range(500):
+            if not is_500x_enabled:
+                return
+            await channel.send(target.mention)
+            await asyncio.sleep(3)
+
+    if 'ㅅㅂ' in message.content and is_500x_enabled:
+            await channel.send('ㅈㅅ')
+            is_500x_enabled = false
+            return
+
+    if '조배호' in message.content:
         await channel.send('https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png')
 
     if message.content.startswith('눈나'):
         await channel.send('https://images-ext-1.discordapp.net/external/sWESaX7qOJS0n8xmLrCH1cxhzBfO1ojC4KHHEbf6P-E/%3Fc%3DVjFfZGlzY29yZA/https/media.tenor.com/Fh58fxSBt08AAAPo/ouro-kronii-wink.mp4')
 
-    if message.content.startswith('ㅇㅎ'):
+    if 'ㅇㅎ' in message.content:
         await channel.send('https://media.discordapp.net/attachments/810490718979489845/957662414378270761/unknown-23.png')
 
     if message.content.startswith('다'):
         await channel.send('다섯살짜리리리리~리리리짜리짜리어린애로있는구나나나나나나나나네이름은짱구신짱구짱구짱구짱구다섯살짜리리리리~리리리짜리짜리어린애로근데당신기타사무라이면서못된괴물이로구나~!신짱구받아라라라라라라라라라라라라라라라라라라라라라라라라음~해보셔도동가동동동모든버튜버중가장귀여운건누구냐?페코짱~도동가동동동동동동모든버튜버중청초한건누구냐?AhoyAhoyHowareyou아임허니아아아아아여러분!오늘새친구가왔어요알피..?ㅈ까!(도망감)대단하구나!(디스)알피는방에서놀고싶어요띠용띠용분명히...레이니일꺼야야!레이니!널사랑해...!있잖아..오빤...정말좋은오빠야!들어와엄마!너답게행동하면돼(ㅅㅂ)삼각산정기받은서울중앙에~김상덕호우후론트라라후론트라라후론트라라라라라라라라거40년을넘게바퀼라에몸담아왔으니모두넘겨!뇨뇨뇨내욕망의검은손으로널먹어주겠어..흐와아아(미친음조절)하?오르카를어떻게생각하고있는거야?멍청이!도둑놈!기생오라비!슷키리시타아마사다코코아와반호텐노모노오시요시타카나?데타!소레와소레와파파파파파팡스테키나키다이다네키다이다네에에에어서오세요~나는매운거진짜못먹는다특산품도잔뜩들어있는걸?특산품?으아아아!이번엔딸국질이야?헉?헉?어뜩하노준비됐지?어때멈췄어..?끅나라야네나라야~네!나라야!!!부산언니!나라야!!!!!!!!!갑니다아아아가짜?내가가짜?도시락을보여다오!!!!!!!!!!!마고마해라~보영아이번에이사하면서짐정리하는거많이힘들었을텐데내가좀부족하지만많이도와줄게오지마!마마마마사랑아보영해사람아보행해할아버지응애산와머니중국정부에게중국말로한마디하세요ㅈ같다ㅗ렛츠,고도리!나야말로진짜영웅왕중의왕너처럼가짜영웅이아니라고!4번째는너랑께?빵상?뿌뿌뿡!뚝배기!야아아아아아!감성보다이성이날앞선OHNO!눈뒤집어까가지고55도발왜?왜!안죄송해!뭉탱이로있다가유링게슝?아이고난!여러분이거다거짓말인거아시죠!이집짬뽕잘한다어디서시켰어?받아롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸롸졌다~!')
 
-    if message.content.startswith('야! 명령어'):
+    if message.content.startswith('명령어'):
         await channel.send('니가 알아서 찾으셈')
 
     if message.content.startswith('신작'):
         await channel.send('https://youtu.be/dggymuhfbcI')
 
-    if message.content.startswith('수정'):
-        msg = await message.channel.send("안녕하세요")
-        await asyncio.sleep(3)
-        await msg.edit(content="반갑습니다")
+    if message.content.startswith('사랑해 '):
+        target = message.mentions[0]
+        msg = await message.channel.send(target.mention + " 사랑해💕💕")
+        await asyncio.sleep(5)
+        await msg.edit(content=target.mention + " 사망해💀💀")
 
     if message.content.startswith('야! 조배호'):
         anser = "강태산이넘!!!!!!!!!!!!! 오허어ㄲㅈ 멀라훕!!!!! 아이탈당이라니 축하해요ㅎㅎㅎㅎ 음~ 법적으로처리해!"
