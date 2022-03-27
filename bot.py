@@ -19,14 +19,20 @@ async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
     await bt(['마감', '응가', '숙면', '식사', '물밥', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹시'])
 
+async def bt(games):
+    await client.wait_until_ready()
+
+    while not client.is_closed():
+        for g in games:
+            await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
+            await asyncio.sleep(1)
+
 @client.event
 async def on_message(message):
     channel = message.channel
-    message.content
-
     if message.content.startswith('킥좀 '):
         target = message.mentions[0]
-        msg = await message.channel.send(target.mention + " 추방 투표!!!")
+        msg = await channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
 
