@@ -48,9 +48,11 @@ async def on_message(message):
             print(i)
             time.sleep(3)
             i += 1          # i를 1씩 증가시킴
-            elif on_message('ㄷㅊ'):
-                break
-            elif i == 500:    # i가 100일 때
+            if on_message(message):
+                if 'ㅅㅂ' in message.content:
+                    await channel.send('ㅈㅅ')
+                    break
+            if i == 500:    # i가 100일 때
                 break
 
     if '조배호' in message.content:
