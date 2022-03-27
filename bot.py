@@ -28,6 +28,7 @@ async def bt(games):
             await asyncio.sleep(10)
 
 @client.event
+global is_500x_enabled
 async def on_message(message):
     channel = message.channel
 
@@ -87,18 +88,12 @@ async def on_message(message):
         await asyncio.sleep(5)
         await msg.edit(content=target.mention + " 사망해💀💀")
 
-    if message.content.startswith('야! 조배호'):
-        anser = "강태산이넘!!!!!!!!!!!!! 오허어ㄲㅈ 멀라훕!!!!! 아이탈당이라니 축하해요ㅎㅎㅎㅎ 음~ 법적으로처리해!"
+    if message.content.startswith('먹지'):
+        anser = "굶어 먹지마 죽어 치킨 피자 떡볶이"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
         await channel.send(anserresult)
-
-    if message.content.startswith('BPM 레드존'):
-        await channel.send('** " 165 " **')
-
-    if message.content.startswith('BPM 에반스'):
-        await channel.send('** " 180 " **')
 
     if message.content.startswith('보고!'):
         await channel.send('보고!')
@@ -115,7 +110,7 @@ async def on_message(message):
     if message.content.startswith('점호 인원보고 총원'):
         await channel.send('쉬어!')
 
-    if message.content.startswith('큰일'):
+    if '일남' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/901454917221355570/ar10232106.png')
 
     if message.content.startswith('도로시'):
@@ -124,10 +119,10 @@ async def on_message(message):
     if message.content.startswith('ㅆㅃ'):
         await channel.send('ㅅㅂ')
 
-    if message.content.startswith('님들'):
+    if '님들' in message.content:
         await channel.send('왜')
 
-    if message.content.startswith('ㅂㅅ'):
+    if 'ㅂㅅ' in message.content:
         await channel.send('어휴ㅉㅉㅉㅉ')
 
     if message.content.startswith('허벌'):
@@ -145,19 +140,21 @@ async def on_message(message):
         time.sleep(5)
         await channel.send('**“월곶탐험에 오신 걸 환영합니다!!”**')
 
-    if message.content.startswith('노홍철'):
+    if '노홍철' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/825755424404799488/EwBRceUVEAIcEJi.png')
 
-    if message.content.startswith('나이'):
-        await channel.send('https://media.discordapp.net/attachments/812665665437696020/825756942978121728/unknown.png')
+    if '나이' in message.content:
+        if '나이스' in message.content:
+            return
+        else await channel.send('https://media.discordappㅔ.net/attachments/812665665437696020/825756942978121728/unknown.png')
 
-    if message.content.startswith('짱구'):
+    if '짱구' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/829346755551297606/1.png')
 
-    if message.content.startswith('브베'):
+    if '브베' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/835502919277215794/20210413_001801.png')
 
-    if message.content.startswith('할까'):
+    if '할까' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/838075427011821639/Screenshot_20210319-122910_Twitter.png')
 
     if message.content.startswith('대도'):
