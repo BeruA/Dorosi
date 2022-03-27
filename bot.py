@@ -27,6 +27,8 @@ async def bt(games):
             await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
             await asyncio.sleep(10)
 
+channels_500x_enabled = []
+
 @client.event
 async def on_message(message):
     channel = message.channel
@@ -49,16 +51,16 @@ async def on_message(message):
             return
 
         target = message.mentions[0]
-        is_500x_enabled = True
+        channels_500x_enabled.append(channel)
         for i in range(500):
-            if not is_500x_enabled:
+            if channel not in channels_500x_enabled:
                 return
             await channel.send(target.mention)
             await asyncio.sleep(3)
 
-    if 'ㅅㅂ' in message.content and is_500x_enabled:
+    if 'ㅅㅂ' in message.content and channel in channels_500x_enabled:
         await channel.send('ㅈㅅ')
-        is_500x_enabled = False
+        channels_500x_enabled.remove(channel)
         return
 
     if '조배호' in message.content:
@@ -182,7 +184,7 @@ async def on_message(message):
     if '네류' in message.content:
         await channel.send('https://images-ext-1.discordapp.net/external/t8Has7FcLiB1B752L_ndepQTLfsQglqd6oMDJhPGt_Q/https/media.discordapp.net/attachments/491939455993774080/829287313833590804/20210407_182721.gif')
 
-    if '정모' on message.content:
+    if '정모' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/856147263003557898/image0.png')
 
     if '오모리' in message.content:
