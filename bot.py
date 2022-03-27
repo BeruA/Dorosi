@@ -1,4 +1,4 @@
-ㅎimport discord
+import discord
 import random
 import asyncio
 import time
@@ -31,8 +31,8 @@ async def bt(games):
 async def on_message(message):
     channel = message.channel
 
-    if message.author == client.user: # 봇 자신이 보내는 메세지는 무시
-        return
+    if message.author.bot:
+        return None
 
     if message.content.startswith('킥좀 '):
         target = message.mentions[0]
@@ -42,11 +42,16 @@ async def on_message(message):
 
     if message.content.startswith('오백배'):
         target = message.mentions[0]
-        await channel.send(target.mention)
-        await channel.send(target.mention)
-        await channel.send(target.mention)
-        await channel.send(target.mention)
-        await channel.send(target.mention)
+        i = 0
+        while True:    # 무한 루프
+            await channel.send(target.mention)
+            print(i)
+            time.sleep(3)
+            i += 1          # i를 1씩 증가시킴
+            elif on_message('ㄷㅊ'):
+                break
+            elif i == 500:    # i가 100일 때
+                break
 
     if '조배호' in message.content:
         await channel.send('https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png')
@@ -201,13 +206,13 @@ async def on_message(message):
     if message.content.startswith('다천사'):
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/868202048598986772/108.png')
 
-    if message.content.startswith('운동'):
+    if '운동' in message.content:
         await channel.send('https://images-ext-2.discordapp.net/external/z4ZyZRHrnDayVtxd7w5dzWpt3o7MX3LTbmt-UGvDObk/https/media.discordapp.net/attachments/804829274384498761/939227928535924847/the_boys-4-1.gif')
 
     if message.content.startswith('미나'):
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
 
-    if message.content.startswith('보지'):
+    if '보지' in message.content:
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
 
     if message.content.startswith('잠만'):
@@ -217,16 +222,16 @@ async def on_message(message):
     if message.content.startswith('ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ'):
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/948146187553361950/IMG_2341.png')
 
-    if message.content.startswith('어쩔티비'):
+    if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
 
-    if message.content.startswith('치킨'):
+    if '치킨' in message.content:
         await channel.send('https://media.discordapp.net/attachments/847126944360431646/932275088819118110/dcbest-20220116-230811-001.jpg')
 
     if message.content.startswith('...'):
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948146865369669682/2.png')
 
-    if message.content.startswith('에어컨'):
+    if '에어컨' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/910366135571083345/received_343331183966812.jpeg')
 
     if message.content.startswith("**조배호**"):
@@ -234,14 +239,14 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
-    if user.bot == 1: #봇이면 패스
-        return None
+    if str(reaction.emoji) == "👍":
+        await reaction.message.channel.send("굳이요")
+    if not reaction.message.author.bot or user.bot:
+        return
     if str(reaction.emoji) == "🦶":
         await reaction.message.channel.send(user.name + " : 킥 ㄱ")
     if str(reaction.emoji) == "💢":
         await reaction.message.channel.send(user.name + " : 밴 ㄱ")
-    if str(reaction.emoji) == "👍":
-        await reaction.message.channel.send("굳이요")
     if str(reaction.emoji) == "💣":
         await reaction.message.channel.send("https://youtu.be/hlR45geEIpY")
     if str(reaction.emoji) == "🇨🇳":
