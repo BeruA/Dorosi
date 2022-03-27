@@ -97,6 +97,114 @@ async def on_message(message):
         anserresult = anserchoice[ansernumber - 1]
         await channel.send(anserresult)
 
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
+    if '어쩔티비' in message.content:
+        await channel.send('저쩔티비')
+
     if message.content.startswith('보고!'):
         await channel.send('보고!')
 
