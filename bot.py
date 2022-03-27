@@ -90,6 +90,20 @@ async def on_message(message):
         await asyncio.sleep(5)
         await msg.edit(content=target.mention + " 사망해💀💀")
 
+    if '신보물섬' in message.content:
+        anser = "굶어 먹지마 죽어 치킨 피자 https://media.discordapp.net/attachments/812665665437696020/825590522092453928/unknown.png"
+        anserchoice = anser.split(" ")
+        ansernumber = random.randint(1, len(anserchoice))
+        anserresult = anserchoice[ansernumber - 1]
+        await channel.send(anserresult)
+
+    if '보지' in message.content:
+        anser = "굶어 먹지마 죽어 치킨 피자 떡볶이"
+        anserchoice = anser.split(" ")
+        ansernumber = random.randint(1, len(anserchoice))
+        anserresult = anserchoice[ansernumber - 1]
+        await channel.send(anserresult)
+
     if '먹지' in message.content:
         anser = "굶어 먹지마 죽어 치킨 피자 떡볶이"
         anserchoice = anser.split(" ")
@@ -100,17 +114,17 @@ async def on_message(message):
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '곰' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/816677434866270258/Screenshot_20210303-232421_Discord.jpg')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '엄마' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/821039634528206888/unknown-221.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '북두' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/825588688871620668/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '마약' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/825588867612016700/unknown.png')
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
