@@ -5,9 +5,6 @@ import time
 
 client = discord.Client()
 
-token = 'OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.RrIKtjhsjyqvjZHHRy2q--nejno'
-
-
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
 async def on_ready():
@@ -238,7 +235,5 @@ async def on_reaction_add(reaction, user):
         await reaction.message.channel.send("https://cdn.discordapp.com/attachments/884787722819092521/908537510974615572/SPOILER_super_idol_.mp4")
 
 
-
-
-
-client.run('OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.RrIKtjhsjyqvjZHHRy2q--nejno')
+TOKEN = os.getenv('BOT_TOKEN')
+client.run(TOKEN)
