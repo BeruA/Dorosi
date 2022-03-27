@@ -5,7 +5,7 @@ import time
 
 client = discord.Client()
 
-token = 'OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.i79zZ7PtEhwCPhzziABc6IHPkAo'
+token = 'OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.RrIKtjhsjyqvjZHHRy2q--nejno'
 
 
 # 봇이 구동되었을 때 보여지는 코드
@@ -315,4 +315,4 @@ async def on_reaction_add(reaction, user):
 
 
 
-client.run('OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.i79zZ7PtEhwCPhzziABc6IHPkAo')
+client.run('OTQ0NDg2ODUyNzM0MzYxNjQw.YhCT7Q.RrIKtjhsjyqvjZHHRy2q--nejno')
