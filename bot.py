@@ -176,7 +176,7 @@ async def on_message(message):
     if message.content == '돌':
         await channel.send('https://media.discordapp.net/attachments/810490718979489845/948183674568966204/unknown.png')
 
-    if '여유만만' inmessage.content:
+    if '여유만만' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/853565574457589760/unknown-19.png')
 
     if '네류' in message.content:
