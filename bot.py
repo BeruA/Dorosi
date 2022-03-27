@@ -48,7 +48,7 @@ async def on_message(message):
             return
 
         target = message.mentions[0]
-        is_500x_enabled = true
+        is_500x_enabled = True
         for i in range(500):
             if not is_500x_enabled:
                 return
@@ -56,9 +56,9 @@ async def on_message(message):
             await asyncio.sleep(3)
 
     if 'ㅅㅂ' in message.content and is_500x_enabled:
-            await channel.send('ㅈㅅ')
-            is_500x_enabled = false
-            return
+        await channel.send('ㅈㅅ')
+        is_500x_enabled = False
+        return
 
     if '조배호' in message.content:
         await channel.send('https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png')
