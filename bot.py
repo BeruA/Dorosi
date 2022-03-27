@@ -188,20 +188,20 @@ async def on_message(message):
     if '탄수' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/871781895522893844/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '좆기' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/880134617108213851/Capture_2019-06-14-07-19-01-2.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '버튜버' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/881176304672702504/anigif1.gif')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '해부' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/879628600515641415/Screenshot_20210824-112925.jpg')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '배드애플' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/878669540127571978/unnamed-15.jpg')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '보성' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/877055015582318622/SmartSelect_20210810-181658_YouTube.png')
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
