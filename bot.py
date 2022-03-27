@@ -88,7 +88,7 @@ async def on_message(message):
         await msg.edit(content=target.mention + " 사망해💀💀")
 
     if '신보물섬' in message.content:
-        anser = "굶어 먹지마 https://media.discordapp.net/attachments/812665665437696020/848574318635646976/image0.png https://twitter.com/kimsmokestack/status/1377980907651407875?s=20 https://media.discordapp.net/attachments/812665665437696020/828185570807250944/unknown.png https://media.discordapp.net/attachments/812665665437696020/825590522092453928/unknown.png"
+        anser = "https://media.discordapp.net/attachments/812665665437696020/898653973278519296/Screenshot_20210601-010856_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/898653973018464286/Screenshot_20210601-010649_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/898653972775182336/Screenshot_20210601-010451_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/848574318635646976/image0.png https://twitter.com/kimsmokestack/status/1377980907651407875?s=20 https://media.discordapp.net/attachments/812665665437696020/828185570807250944/unknown.png https://media.discordapp.net/attachments/812665665437696020/825590522092453928/unknown.png"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
@@ -109,7 +109,7 @@ async def on_message(message):
         await channel.send(anserresult)
 
     if '유재석' in message.content:
-        anser = "굶어 먹지마 https://media.discordapp.net/attachments/812665665437696020/882953006138683392/image0-22.png https://images-ext-2.discordapp.net/external/ouappJrhNvu16WMAh_EphQitPgXDvevv9RvDtoa5x18/https/media.discordapp.net/attachments/810490718979489845/868899031160590378/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007156904951808/unknown.png https://media.discordapp.net/attachments/812665665437696020/838076543732678678/image0.png"
+        anser = "https://media.discordapp.net/attachments/812665665437696020/898533166854316053/unknown.png https://media.discordapp.net/attachments/812665665437696020/890923027200626768/9241913.png https://media.discordapp.net/attachments/812665665437696020/882953006138683392/image0-22.png https://images-ext-2.discordapp.net/external/ouappJrhNvu16WMAh_EphQitPgXDvevv9RvDtoa5x18/https/media.discordapp.net/attachments/810490718979489845/868899031160590378/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007156904951808/unknown.png https://media.discordapp.net/attachments/812665665437696020/838076543732678678/image0.png"
         anserchoice = anser.split(" ")
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
@@ -224,20 +224,20 @@ async def on_message(message):
     if '터짐' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/888660612685643776/Screenshot_20210918-143146_Discord-Beta.jpg')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '짚' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/888801542499602472/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '렘' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/890774542207832124/Screenshots_2021-08-02-23-25-06.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '리퍼' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/891504355612721192/unknown.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '포켓몬' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/812665665437696020/894395903811649546/Untitled-1.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '레드존' in message.content:
+        await channel.send('https://cdn.discordapp.com/attachments/856781757546102795/896473145890979860/ertert-1.mp4')
 
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
