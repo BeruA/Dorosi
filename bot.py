@@ -4,7 +4,6 @@ import asyncio
 import time
 import os
 import io
-import shutil
 
 from google_images_download import google_images_download
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -110,7 +109,7 @@ async def on_message(message):
         buffer = io.BytesIO()
         imzz.save(buffer, format='png')
         buffer.seek(0)
-        await message.channel.send(file=File(buffer, f"./150.png"))
+        await message.channel.send(file=discord.File(buffer, f"./150.png"))
         
 
     if '킥' in message.content:                
