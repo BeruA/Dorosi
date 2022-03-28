@@ -67,16 +67,14 @@ async def on_message(message):
 
         time.sleep(1)
 
-        try:
-            imzz = Image.open("./150.png").convert('RGB')
-            ima = Image.open("./image/{Rx[0]}.png").convert('RGB')
-            imb = Image.open("./image/{Rx[1]}.png").convert('RGB')
-            imc = Image.open("./image/{Rx[2]}.png").convert('RGB')
-            imd = Image.open("./image/{Rx[3]}.png").convert('RGB')
-            ime = Image.open("./image/{Rx[4]}.png").convert('RGB')
-            imf = Image.open("./image/{Rx[5]}.png").convert('RGB')
-        except:
-            await channel.send("파일 깨짐ㅋㅋㅈㅅ")
+        imzz = Image.open("./150.png").convert('RGB')
+        ima = Image.open("./image/{Rx[0]}.png").convert('RGB')
+        imb = Image.open("./image/{Rx[1]}.png").convert('RGB')
+        imc = Image.open("./image/{Rx[2]}.png").convert('RGB')
+        imd = Image.open("./image/{Rx[3]}.png").convert('RGB')
+        ime = Image.open("./image/{Rx[4]}.png").convert('RGB')
+        imf = Image.open("./image/{Rx[5]}.png").convert('RGB')
+
         try:
             draw = ImageDraw.Draw(imzz, 'RGB')
             imaS = ima.resize((1280, 720))
