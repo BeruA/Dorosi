@@ -1,2 +1,4 @@
 git+https://github.com/Rapptz/discord.py
 git+https://github.com/Joeclinton1/google-images-download.git
+google_images_download~=2.8.0
+Pillow~=9.0.1
