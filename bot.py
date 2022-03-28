@@ -3,9 +3,11 @@ import random
 import asyncio
 import time
 import os
+import io
+import shutil
+
 from google_images_download import google_images_download
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-import shutil
 
 client = discord.Client(
     intents=discord.Intents.all()
