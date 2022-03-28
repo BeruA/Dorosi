@@ -44,7 +44,7 @@ async def on_message(message):
      
         
 
-    if '킥' in message.content                              
+    if '킥' in message.content:
         if not message.mentions:
             return
         target = message.mentions[0]
