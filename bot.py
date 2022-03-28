@@ -3,9 +3,6 @@ import random
 import asyncio
 import time
 import os
-from google_images_download import google_images_download
-from PIL import Image, ImageDraw, ImageFont, ImageOps
-import shutil
 
 
 client = discord.Client(
@@ -41,84 +38,7 @@ async def on_message(message):
     if message.author.bot:
         return None
         
-    if '마타' in message.content:
-        await channel.send('제작중...좀만기달...')
-        def imageCrawling(keyword, directory): #여기가 구글이미지 다운로드 하는거
-            shutil.rmtree("https://github.com/BeruA/Dorosi/image")
-            response = google_images_download.googleimagesdownload()
-            arguments = {"keywords": message.content[:-2], "limit": 20, "print_urls": True, "format": "png", "no_directory": True
-                , "output_directory": directory}
-            paths = response.download(arguments)
-            print(paths)
-
-        imageCrawling(f"{message.content[:-2]}", "https://github.com/BeruA/Dorosi/image")
-
-        def changeName(path, cName):
-            i = 1
-            for filename in os.listdir(path):
-                print(path + filename, '=>', path + str(cName) + str(i) + '.png')
-                os.rename(path + filename, path + str(cName) + str(i) + '.png')
-                i += 1
-
-        changeName("https://github.com/BeruA/Dorosi/image//", '')
-
-        Rx = random.sample(range(1, 10), 6)
-
-        time.sleep(1)
-
-        try:
-            imzz = Image.open("https://github.com/BeruA/Dorosi/150.png").convert('RGB')
-            ima = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[0]}.png").convert('RGB')
-            imb = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[1]}.png").convert('RGB')
-            imc = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[2]}.png").convert('RGB')
-            imd = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[3]}.png").convert('RGB')
-            ime = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[4]}.png").convert('RGB')
-            imf = Image.open("https://github.com/BeruA/Dorosi/image//{Rx[5]}.png").convert('RGB')
-        except:
-            await message.channel.send("파일 깨짐ㅋㅋㅈㅅ")
-        try:
-            draw = ImageDraw.Draw(imzz, 'RGB')
-            imaS = ima.resize((1280, 720))
-            imbS = imb.resize((288, 162))
-            imcS = imc.resize((640, 300))
-            imdS = imd.resize((640, 360))
-            imeS = ime.resize((640, 360))
-            imfS = imf.resize((896, 504))
-            imzz.paste(imaS, (0, 0))
-            imzz.paste(imfS, (192, 108))
-            C = ImageOps.expand(imcS, border=(7, 7, 7, 7), fill=(0, 0, 0))
-            imzz.paste(C, (630, 203))
-            EE = imeS.transpose(Image.FLIP_LEFT_RIGHT)
-            E = ImageOps.expand(EE, border=(10, 10, 10, 10), fill=(0, 0, 0))
-            imzz.paste(E, (530, 310))
-            D = ImageOps.expand(imdS, border=(10, 10, 10, 10), fill=(0, 0, 0))
-            imzz.paste(D, (110, 50))
-
-
-            imbX = imbS.transpose(Image.FLIP_LEFT_RIGHT)
-            imbXX = imbX.transpose(Image.FLIP_TOP_BOTTOM)
-            imbXXX = imbS.transpose(Image.FLIP_TOP_BOTTOM)
-            B = ImageOps.expand(imbS, border=(5, 5, 5, 5), fill=(0, 0, 0)) #아웃라인 설치
-            BB = ImageOps.expand(imbX, border=(5, 5, 5, 5), fill=(0, 0, 0))
-            BBB = ImageOps.expand(imbXX, border=(5, 5, 5, 5), fill=(0, 0, 0))
-            BBBB = ImageOps.expand(imbXXX, border=(5, 5, 5, 5), fill=(0, 0, 0))
-
-            imzz.paste(B, (5, 5))
-            imzz.paste(BB, (977, 5))
-            imzz.paste(BBB, (977, 543))
-            imzz.paste(BBBB, (5, 543))
-        except:
-            await message.channel.send('오류남ㅋ')
-
-        buffer = io.BytesIO()
-
-        imzz.save(buffer, format='png')
-
-        buffer.seek(0)
-
-        await channel.send(file=File(buffer, f"https://github.com/BeruA/Dorosi/150.png"))
-    
-    if '킥' in message.content:
+    if '킥' in message.content                              
         if not message.mentions:
             return
         target = message.mentions[0]
