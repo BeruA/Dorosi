@@ -314,8 +314,8 @@ async def on_message(message):
     if '일남' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/901454917221355570/ar10232106.png')
 
-    if message.content.startswith('도로시'):
-        await channel.send('https://media.discordapp.net/attachments/803945796151279636/948145013206949918/IMG_2337.png')
+    if 'ㄲㅂ' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/803945796151279636/957690701473271808/IMG_2883.jpg')
 
     if message.content.startswith('ㅆㅃ'):
         await channel.send('ㅅㅂ')
@@ -323,7 +323,7 @@ async def on_message(message):
     if '님들' in message.content:
         await channel.send('왜')
 
-    if 'ㅂㅅ' in message.content:
+    if message.content == ('ㅂㅅ'):
         await channel.send('어휴ㅉㅉㅉㅉ')
 
     if message.content.startswith('허벌'):
@@ -419,7 +419,7 @@ async def on_message(message):
     if '운동' in message.content:
         await channel.send('https://images-ext-2.discordapp.net/external/z4ZyZRHrnDayVtxd7w5dzWpt3o7MX3LTbmt-UGvDObk/https/media.discordapp.net/attachments/804829274384498761/939227928535924847/the_boys-4-1.gif')
 
-    if '미니' in message.content:
+    if '미나' in message.content:
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
 
     if message.content.startswith('잠만'):
@@ -429,8 +429,8 @@ async def on_message(message):
     if message.content.startswith('ㄱㅋㄲ'):
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/948146187553361950/IMG_2341.png')
 
-    if '어쩔티비' in message.content:
-        await channel.send('저쩔티비')
+    if '까비' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/803945796151279636/957690701473271808/IMG_2883.jpg')
 
     if '치킨' in message.content:
         await channel.send('https://media.discordapp.net/attachments/847126944360431646/932275088819118110/dcbest-20220116-230811-001.jpg')
