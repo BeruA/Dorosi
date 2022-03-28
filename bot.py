@@ -125,6 +125,9 @@ async def on_message(message):
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
 
+    if '폐업' in message.content:
+        await channel.send('https://media.discordapp.net/attachments/840125539700178954/957666023627182140/20220322_171605.jpg')
+
     if '아이고' in message.content:
         await channel.send('https://media.discordapp.net/attachments/792743630140866572/792759057060200488/32709ee9-0d73-4ac4-82ce-9266e6ff7700216w640.png')
 
