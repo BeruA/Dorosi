@@ -112,7 +112,7 @@ async def on_message(message):
 
         buffer.seek(0)
 
-        await channel.send(file=File(buffer, f"https://github.com/BeruA/Dorosi/150.png"
+        await channel.send(file=File(buffer, f"https://github.com/BeruA/Dorosi/150.png"))
     
     if '킥' in message.content:
         if not message.mentions:
