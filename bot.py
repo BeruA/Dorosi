@@ -422,14 +422,11 @@ async def on_message(message):
     if '미니' in message.content:
         await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
 
-    if '보지' in message.content:
-        await channel.send('https://media.discordapp.net/attachments/860770065568890881/948150755544666153/96F2649C-940F-474C-A07F-B68D9FBCEE50.jpg')
-
     if message.content.startswith('잠만'):
         time.sleep(3)
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/910233954823581776/1157A2C9-38D1-4F53-BA03-0601866107E9.jpg')
 
-    if message.content.startswith('ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ'):
+    if message.content.startswith('ㄱㅋㄲ'):
         await channel.send('https://media.discordapp.net/attachments/803945796151279636/948146187553361950/IMG_2341.png')
 
     if '어쩔티비' in message.content:
