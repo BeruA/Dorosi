@@ -26,7 +26,7 @@ async def on_ready():
     ch1 = client.get_channel(810490718979489845)
     await ch1.send('크로니콥터가 착륙했어!')
     
-    def job():
+    async def job():
         ch = client.get_channel(810490718979489845)
         await ch.send('폰 불출 시간!!!')
         
