@@ -81,8 +81,6 @@ async def on_message(message):
     if not dai == dt.datetime.now(tz=KST).day:
         a = 0
         dai = dt.datetime.now(tz=KST).day
-    else:
-        return
     
     if a == 777:
         await channel.send('축하합니다! 당신이 방금 한 발언은 오늘의 777번째 채팅!!!!!!!!')
@@ -93,8 +91,6 @@ async def on_message(message):
     if randint(1, 1000) == 1:
         await message.delete()
         await channel.send('축하합니다! 당신은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!')
-    else:
-        return
 
     if message.author.bot:
         return
