@@ -57,6 +57,10 @@ async def on_message(message):
 
     if message.author.bot:
         return None
+        
+    if message.content == ('크로니테스트')
+        ch1 = client.get_channel(810490718979489845)
+        await ch1.send('크로니콥터가 착륙했어!')
     
     if '킥' in message.content:                
         if not message.mentions:
