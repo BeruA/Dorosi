@@ -29,7 +29,7 @@ async def on_ready():
     ids = [
         810490718979489845,
         772475285320237069,
-        847126893534117890,
+        853846368870596688,
         ]
     channels = [client.get_channel(id) for id in ids]
     
@@ -78,15 +78,16 @@ channels_500x_enabled = []
 
 @client.event
 async def on_message(message):
-    channel = message.channel
+    mc = message.content
+    mcs = await message.channel.send
     global is_500x_enabled
 
     if message.author.bot:
         return None
         
-    if message.content == ('크로테스트'):
+    if mc == ('크로테스트'):
         now = datetime.datetime.now()
-        await channel.send(f"{now.hour}시 {now.minute}분이다!!")
+        mcs(f"{now.hour}시 {now.minute}분이다!!")
     
     if '킥' in message.content:                
         if not message.mentions:
