@@ -50,9 +50,9 @@ async def every_hour_notice(self):
         await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
         time.sleep(1)
  
-    if datetime.datetime.now().hour == 0 and datetime.datetime.now().minute == 1 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().minute == 1 and datetime.datetime.now().second == 0:
         await ch2.send("테스트ㅇ")
-        time.sleep(1)
+        time.sleep(3)
     
     
 # 봇이 구동되었을 때 보여지는 코드
