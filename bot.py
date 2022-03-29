@@ -44,7 +44,7 @@ async def bt(games):
             await asyncio.sleep(10)
 
 @tasks.loop(seconds=1)
-async def time():
+async def time(self):
     ch1 = client.get_channel(810490718979489845)
     ch2 = client.get_channel(772475285320237069)
     ch3 = client.get_channel(847126893534117890)
