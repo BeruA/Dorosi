@@ -196,7 +196,7 @@ async def on_message(message):
         await channel.send('https://youtu.be/szWb4X3JhQs')
 
     if '만기' in message.content:
-        await channel.send('https://media.discordapp.net/attachments/812665665437696020/868909440143859782/Screenshot_20210616-183842_Discord-Beta.jpg')
+        await channel.send('https://media.discordapp.net/attachments/847126893534117890/958240426320609320/projectmx-20220328-172436-000.jpg.jpg')
 
     if '베리나' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/868908849174806588/Screenshot_20210624-114233_Parallel_Space_64Bit_Support.jpg')
