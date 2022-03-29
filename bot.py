@@ -37,25 +37,25 @@ async def bt(games):
 channels_500x_enabled = []
 
 @client.event
-async def job():
-    channel=client.get_channel(810490718979489845)
-    await channel.send('폰 불출 시간!!!')
-    
-    schedule.every().monday.at("17:30").do(job)
-    schedule.every().tuesday.at("16:00").do(job)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-@client.event
 async def on_message(message):
     channel = message.channel
     global is_500x_enabled
 
     if message.author.bot:
         return None
-
+    
+    if measage.content == '여기다 알림':
+        def job():
+            await channel.send('폰 불출 시간!!!')
+            
+            schedule.every().monday.at("17:30").do(job)
+            schedule.every().tuesday.at("16:04").do(job)
+        
+            while True:
+                schedule.run_pending()
+                time.sleep(1)
+        
+    
     if '킥' in message.content:                
         if not message.mentions:
             return
