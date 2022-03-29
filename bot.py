@@ -86,6 +86,10 @@ async def on_message(message):
 
     if message.author.bot:
         return None
+        
+    if message.content == 크로테스트:
+        now = datetime.daterime.now()
+        await channel.send(now.hour + "시" now.minute + "분이다!!")
     
     if '킥' in message.content:                
         if not message.mentions:
