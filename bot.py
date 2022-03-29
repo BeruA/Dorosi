@@ -72,7 +72,7 @@ async def time(self):
         await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
         await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
  
-    if datetime.datetime.now().minute == 1 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 10:
         await ch2.send("테스트ㅇ")
 
 channels_500x_enabled = []
