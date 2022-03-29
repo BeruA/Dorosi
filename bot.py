@@ -24,15 +24,16 @@ async def on_ready():
     print("================")
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
     await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
-    await def job():
+    def job():
         channel = cloent.get_channels(810490718979489845)
         channel.send('폰 불출 시간!!!')
-    schedule.every().monday.at("17:30").do(job)
-    schedule.every().tuesday.at("16:20").do(job)
+        
+    await schedule.every().monday.at("17:30").do(job)
+    await schedule.every().tuesday.at("16:20").do(job)
             
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        asyncio.sleep(1)
 
 async def bt(games):
     await client.wait_until_ready()
