@@ -17,11 +17,38 @@ client = discord.Client(
     intents=discord.Intents.all()
 )
 
+    
+# 봇이 구동되었을 때 보여지는 코드
+@client.event
+async def on_ready():
+    print("다음으로 로그인합니다")
+    print(client.user.name)
+    print(client.user.id)
+    print("================")
+    ch1 = client.get_channel(810490718979489845)
+    ch2 = client.get_channel(772475285320237069)
+    ch3 = client.get_channel(853846368870596688)
+    await ch1.send('크로니콥터가 착륙했어!')
+    await ch2.send('크로니콥터가 착륙했어!')
+    await ch3.send('크로니콥터가 착륙했어!')
+
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
+    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
+
+async def bt(games):
+    await client.wait_until_ready()
+
+    while not client.is_closed():
+        for g in games:
+            await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
+            await asyncio.sleep(10)
+
 @tasks.loop(seconds=1)
-async def every_hour_notice(self):
+async def time():
     ch1 = client.get_channel(810490718979489845)
     ch2 = client.get_channel(772475285320237069)
     ch3 = client.get_channel(847126893534117890)
+    
     if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("https://youtu.be/H04dl1te52Q")
         await ch2.send("https://youtu.be/H04dl1te52Q")
@@ -53,32 +80,6 @@ async def every_hour_notice(self):
     if datetime.datetime.now().minute == 1 and datetime.datetime.now().second == 0:
         await ch2.send("테스트ㅇ")
         time.sleep(3)
-    
-    
-# 봇이 구동되었을 때 보여지는 코드
-@client.event
-async def on_ready():
-    print("다음으로 로그인합니다")
-    print(client.user.name)
-    print(client.user.id)
-    print("================")
-    ch1 = client.get_channel(810490718979489845)
-    ch2 = client.get_channel(772475285320237069)
-    ch3 = client.get_channel(853846368870596688)
-    await ch1.send('크로니콥터가 착륙했어!')
-    await ch2.send('크로니콥터가 착륙했어!')
-    await ch3.send('크로니콥터가 착륙했어!')
-
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
-    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
-
-async def bt(games):
-    await client.wait_until_ready()
-
-    while not client.is_closed():
-        for g in games:
-            await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
-            await asyncio.sleep(10)
 
 channels_500x_enabled = []
 
