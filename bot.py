@@ -34,13 +34,13 @@ async def every_hour_notice(self):
         await ch3.send("구닌들 폰 받는시간!!")
         time.sleep(1)
 
-    if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().hour == 13 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("구닌들 폰 내는시간ㅠ")
         await ch2.send("구닌들 폰 내는시간ㅠ")
         await ch3.send("구닌들 폰 내는시간ㅠ")
         time.sleep(1)
 
-    if datetime.datetime.now().hour == 13 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().hour == 14 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
         await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
         time.sleep(1)
