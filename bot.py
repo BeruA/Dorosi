@@ -81,6 +81,8 @@ async def on_message(message):
     if not dai == dt.datetime.now(tz=KST).day:
         a = 0
         dai = dt.datetime.now(tz=KST).day
+    else:
+        return
     
     if a == 777:
         await channel.send('축하합니다! 당신이 방금 한 발언은 오늘의 777번째 채팅!!!!!!!!')
