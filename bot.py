@@ -129,8 +129,19 @@ async def on_message(message):
         anserresult = anserchoice[ansernumber - 1]
         await channel.send(anserresult)
 
+    if '만기' in message.content:
+        anser = "꿀벌 https://media.discordapp.net/attachments/847126893534117890/958242108651765770/unknown-2-removebg-preview.png https://images-ext-1.discordapp.net/external/VFj_87_XFzhA4udB35lrkMoo03VcfUO3RI-FjBsmafA/https/media.discordapp.net/attachments/847126893534117890/958240426320609320/projectmx-20220328-172436-000.jpg.jpg"
+        anserchoice = anser.split(" ")
+        ansernumber = random.randint(1, len(anserchoice))
+        anserresult = anserchoice[ansernumber - 1]
+        await channel.send(anserresult)
+
     if '어쩔티비' in message.content:
         await channel.send('저쩔티비')
+
+    if '어떨까요' in message.content:
+        await message.delete()
+        await channel.send('https://media.discordapp.net/attachments/847126893534117890/958242582922690561/IMG_2992.png')
 
     if '폐업' in message.content:
         await channel.send('https://media.discordapp.net/attachments/840125539700178954/957666023627182140/20220322_171605.jpg')
@@ -194,9 +205,6 @@ async def on_message(message):
 
     if '샤를' in message.content:
         await channel.send('https://youtu.be/szWb4X3JhQs')
-
-    if '만기' in message.content:
-        await channel.send('https://media.discordapp.net/attachments/847126893534117890/958240426320609320/projectmx-20220328-172436-000.jpg.jpg')
 
     if '베리나' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/868908849174806588/Screenshot_20210624-114233_Parallel_Space_64Bit_Support.jpg')
