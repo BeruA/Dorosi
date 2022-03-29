@@ -31,15 +31,7 @@ async def on_ready():
     await ch1.send('크로니콥터가 착륙했어!')
     await ch2.send('크로니콥터가 착륙했어!')
     await ch3.send('크로니콥터가 착륙했어!')
-    
-    async def job():
-        await ch1.send('폰 불출 시간!!!')
-    await schedule.every(10).second.do(job)
-            
-    while True:
-        schedule.run_pending()
-        asyncio.sleep(1)
-        
+
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
     await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
 
