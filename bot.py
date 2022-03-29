@@ -72,10 +72,7 @@ async def time_check():
     if now.hour == 22 and now.minute == 0 and now.second == 0:
         for ch in channels:
             await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
-    
-    if now.second == 0:
-        for ch in channels:
-            await ch.send("성공!!")
+            
 
 channels_500x_enabled = []
 
