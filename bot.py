@@ -61,8 +61,8 @@ async def on_message(message):
     if message.author.bot:
         return None
     
-    if message.content == ('크로니테스트')
-        channel.send("현재 {}시 {}분 입니다.".format(datetime.datetime.now().hour, datetime.datetime.now().minute))
+    if message.content == ('크로니테스트'):
+        await channel.send("현재 {}시 {}분 입니다.".format(datetime.datetime.now().hour, datetime.datetime.now().minute))
 
     if '킥' in message.content:                
         if not message.mentions:
