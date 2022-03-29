@@ -17,8 +17,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 client = discord.Client(
     intents=discord.Intents.all()
 )
-
-    
+a = 0
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
 async def on_ready():
@@ -26,16 +25,10 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-    
-    ids = [
-        810490718979489845,
-        772475285320237069,
-        853846368870596688,
-        ]
-    channels = [client.get_channel(id) for id in ids]
-    
-    for ch in channels:
-        await ch.send("크로니콥터가 착륙했어!")
+
+    ch = client.get_channel(853846368870596688)
+
+    await ch.send("크로니콥터가 착륙했어!")
     time_check.start()
     change_sex.start()
     
@@ -73,10 +66,19 @@ async def time_check():
     if now.hour == 22 and now.minute == 0 and now.second == 0:
         for ch in channels:
             await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
-            
+
+a = 0
+
+@tasks.loop(seconds=1)
+async def reset(): 
+    global a
+    now = datetime.datetime.now()
+    if now.hour == 15 and now.minute == 0 and now.second == 0:
+        a = 0
+    if now.second == 0:
+        a = 0
 
 channels_500x_enabled = []
-a = 0
 
 @client.event
 async def on_message(message):
@@ -85,10 +87,17 @@ async def on_message(message):
     global a
     a = a+1
     channel = message.channel
+    now = datetime.datetime.now()
     
-    if a == 7:
-        await channel.send('축하합니다! 당신이 친 체팅은 오늘의 777번째 체팅!!!!!!!!')
+    if a == 5:
+        await channel.send('이 메세지가 1분에 한번씩 보인다면 성공!')
     
+    if a == 777:
+        await channel.send('축하합니다! 당신이 방금 한 발언은 오늘의 777번째 채팅!!!!!!!!')
+    
+    if a == 7777:
+        await channel.send('뱅 뱅 와우!!!!!!!!! 당신이 방금 한 발언은 오늘의 7777번째 채팅!!!!!!!! 홀리 씻 오마이 갓 세상에나 마상에!!!!!!!!오 와우!!!!!!!!!!!!!!!!!!!')
+
     if randint(1, 1000) == 1:
         await message.delete()
         await channel.send('축하합니다! 당신은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!')
