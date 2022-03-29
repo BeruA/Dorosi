@@ -44,7 +44,7 @@ async def bt(games):
             await asyncio.sleep(10)
 
 @tasks.loop(seconds=1)
-async def time():
+async def tasks_loop():
     ids = [
         810490718979489845,
         772475285320237069,
