@@ -44,36 +44,38 @@ async def bt(games):
             await asyncio.sleep(10)
 
 @tasks.loop(seconds=1)
-async def time(self):
-    ch1 = client.get_channel(810490718979489845)
-    ch2 = client.get_channel(772475285320237069)
-    ch3 = client.get_channel(847126893534117890)
+async def time():
+    ids = [
+        810490718979489845,
+        772475285320237069,
+        847126893534117890,
+    ]
+    channels = [client.get_channel(id) for id in ids]  
+    now = datetime.datetime.now()
+
+    if now.hour == 18 and now.minute == 0 and now.second == 0:
+        for ch in channels:
+            await ch.send("https://youtu.be/H04dl1te52Q")
+
+    if now.hour == 8 and now.minute == 30 and now.second == 0:
+            for ch in channels:
+                await ch.send("구닌들 폰 받는시간!!")
     
-    if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
-        await ch1.send("https://youtu.be/H04dl1te52Q")
-        await ch2.send("https://youtu.be/H04dl1te52Q")
-        await ch3.send("https://youtu.be/H04dl1te52Q")
+    if now.hour == 12 and now.minute == 0 and now.second == 0:
+            for ch in channels:
+                await ch.send("구닌들 폰 내는시간ㅠㅠ")
 
-    if datetime.datetime.now().hour == 8 and datetime.datetime.now().minute == 30 and datetime.datetime.now().second == 0:
-        await ch1.send("구닌들 폰 받는시간!!")
-        await ch2.send("구닌들 폰 받는시간!!")
-        await ch3.send("구닌들 폰 받는시간!!")
+    if now.hour == 13 and now.minute == 13 and now.second == 0:
+            for ch in channels:
+                await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
 
-    if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
-        await ch1.send("구닌들 폰 내는시간ㅠ")
-        await ch2.send("구닌들 폰 내는시간ㅠ")
-        await ch3.send("구닌들 폰 내는시간ㅠ")
-
-    if datetime.datetime.now().hour == 13 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
-        await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
-        await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
-
-    if datetime.datetime.now().hour == 22 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
-        await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
-        await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
- 
-    if datetime.datetime.now().second == 0:
-        await ch2.send("테스트ㅇ")
+    if now.hour == 22 and now.minute == 0 and now.second == 0:
+            for ch in channels:
+                await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
+    
+    if now.second == 0:
+            for ch in channels:
+                await ch.send("성공!!")
 
 channels_500x_enabled = []
 
