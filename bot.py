@@ -45,11 +45,10 @@ async def on_message(message):
         return None
     
     if measage.content == '여기다 알림':
-        def job():
-            await channel.send('폰 불출 시간!!!')
-            
+        await def job():
+            channel.send('폰 불출 시간!!!')
             schedule.every().monday.at("17:30").do(job)
-            schedule.every().tuesday.at("16:04").do(job)
+            schedule.every().tuesday.at("16:06").do(job)
         
             while True:
                 schedule.run_pending()
