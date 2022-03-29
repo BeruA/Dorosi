@@ -25,26 +25,26 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-    ch1 = client.get_channel(810490718979489845)
-    ch2 = client.get_channel(772475285320237069)
-    ch3 = client.get_channel(853846368870596688)
-    await ch1.send('크로니콥터가 착륙했어!')
-    await ch2.send('크로니콥터가 착륙했어!')
-    await ch3.send('크로니콥터가 착륙했어!')
-
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
-    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
-
-async def bt(games):
-    await client.wait_until_ready()
-
-    while not client.is_closed():
-        for g in games:
-            await client.change_presence(status=discord.Status.online, activity=discord.Game(g))
-            await asyncio.sleep(10)
+    
+    ids = [
+        810490718979489845,
+        772475285320237069,
+        847126893534117890,
+        ]
+    channels = [client.get_channel(id) for id in ids]
+    
+    for ch in channels:
+        await ch.send("크로니콥터가 착륙했어!")
+    time_check.start()
+    change_sex.start()
+    
+@tasks.loop(seconds=5)
+async def change_sex():
+    sex = cycle(["마감", "섹스", "운전", "화공", "하는 중 하는 중 하는 중 하는 중 하는 중"])
+    await client.change_presence(activity=discord.Game(next(sex)))
 
 @tasks.loop(seconds=1)
-async def tasks_loop():
+async def time_check():
     ids = [
         810490718979489845,
         772475285320237069,
