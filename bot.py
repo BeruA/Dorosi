@@ -29,7 +29,7 @@ async def on_ready():
         channel.send('폰 불출 시간!!!')
         
     await schedule.every().monday.at("17:30").do(job)
-    await schedule.every().tuesday.at("16:47").do(job)
+    await schedule.every(10).second.do(job)
             
     while True:
         schedule.run_pending()
