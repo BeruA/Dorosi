@@ -38,7 +38,7 @@ channels_500x_enabled = []
 
 def go():
     channel=client.get_channel(810490718979489845)
-    await channel.send('폰 불출 시간!!!')
+    channel.send('폰 불출 시간!!!')
     
 schedule.every().monday.at("17:30").do(go)
 schedule.every().tuesday.at("15:40").do(go)
