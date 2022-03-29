@@ -76,14 +76,14 @@ async def time_check():
             
 
 channels_500x_enabled = []
-global a
 a = 0
 
 @client.event
 async def on_message(message):
-    
-    a = a+1
+
     global is_500x_enabled
+    global a
+    a = a+1
     channel = message.channel
     
     if a == 7:
