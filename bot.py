@@ -87,7 +87,8 @@ async def on_message(message):
         
     if message.content == ('에고'):
         await message.delete()
-        await channel.send('https://media.discordapp.net/attachments/956643812883697704/958361371416879214/IMG_3016.png\n아첨해대는그모습구역질이날것같아시니컬한시선의비오늘도두눈을닫는척')
+        await channel.send('https://media.discordapp.net/attachments/956643812883697704/958361371416879214/IMG_3016.png')
+        await channel.send('아첨해대는그모습구역질이날것같아시니컬한시선의비오늘도두눈을닫는척')
 
     if '킥' in message.content:                
         if not message.mentions:
