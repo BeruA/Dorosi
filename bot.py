@@ -7,12 +7,10 @@ import io
 import shutil
 import schedule
 import time
-import datetime
+import datetime as dt
 import itertools
 from discord.ext import tasks
-
-from google_images_download import google_images_download
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from random import randint
 
 client = discord.Client(
     intents=discord.Intents.all()
@@ -45,7 +43,7 @@ async def time_check():
         847126893534117890,
     ]
     channels = [client.get_channel(id) for id in ids]  
-    now = datetime.datetime.now()
+    now = dt.datetime.now()
 
     if now.hour == 18 and now.minute == 0 and now.second == 0:
         for ch in channels:
@@ -67,30 +65,22 @@ async def time_check():
         for ch in channels:
             await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
 
-a = 0
-
-@tasks.loop(seconds=1)
-async def reset(): 
-    global a
-    now = datetime.datetime.now()
-    if now.hour == 15 and now.minute == 0 and now.second == 0:
-        a = 0
-    if now.second == 0:
-        a = 0
-
 channels_500x_enabled = []
+dai = 0
+a = 0
+KST=dt.timezone(dt.timedelta(hours=9))
 
 @client.event
 async def on_message(message):
 
-    global is_500x_enabled
     global a
-    a = a+1
+    global dai
+    a += 1
     channel = message.channel
-    now = datetime.datetime.now()
     
-    if a == 5:
-        await channel.send('이 메세지가 1분에 한번씩 보인다면 성공!')
+    if not dai == dt.datetime.now.day(tz=KST): 
+        a = 0
+        dai = dt.datetime.now.day(tz=KST)
     
     if a == 777:
         await channel.send('축하합니다! 당신이 방금 한 발언은 오늘의 777번째 채팅!!!!!!!!')
