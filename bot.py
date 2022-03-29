@@ -28,10 +28,10 @@ async def on_ready():
     
     def job():
         ch = client.get_channel(810490718979489845)
-        ch.send('폰 불출 시간!!!')
+        await ch.send('폰 불출 시간!!!')
         
-    await schedule.every().monday.at("17:30").do(job)
-    await schedule.every(10).second.do(job)
+    schedule.every().monday.at("17:30").do(job)
+    schedule.every(10).second.do(job)
             
     while True:
         schedule.run_pending()
