@@ -7,6 +7,8 @@ import io
 import shutil
 import schedule
 import time
+from discord.ext import tasks
+import datetime
 
 from google_images_download import google_images_download
 from PIL import Image, ImageDraw, ImageFont, ImageOps
