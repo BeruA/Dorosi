@@ -22,9 +22,17 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
     await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
+    def job():
+        channel = cloent.get_channels(810490718979489845)
+        channel.send('폰 불출 시간!!!')
+    schedule.every().monday.at("17:30").do(job)
+    schedule.every().tuesday.at("16:20").do(job)
+            
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 async def bt(games):
     await client.wait_until_ready()
@@ -43,17 +51,6 @@ async def on_message(message):
 
     if message.author.bot:
         return None
-    
-    if measage.content == '여기다 알림':
-        await def job():
-            channel.send('폰 불출 시간!!!')
-            schedule.every().monday.at("17:30").do(job)
-            schedule.every().tuesday.at("16:06").do(job)
-        
-            while True:
-                schedule.run_pending()
-                time.sleep(1)
-        
     
     if '킥' in message.content:                
         if not message.mentions:
