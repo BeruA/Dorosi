@@ -32,8 +32,6 @@ async def on_ready():
     
     async def job():
         await ch1.send('폰 불출 시간!!!')
-        
-    schedule.every().monday.at("17:30").do(job)
     await schedule.every(10).second.do(job)
             
     while True:
