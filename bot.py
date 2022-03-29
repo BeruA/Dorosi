@@ -58,24 +58,24 @@ async def time():
             await ch.send("https://youtu.be/H04dl1te52Q")
 
     if now.hour == 8 and now.minute == 30 and now.second == 0:
-            for ch in channels:
-                await ch.send("구닌들 폰 받는시간!!")
+        for ch in channels:
+            await ch.send("구닌들 폰 받는시간!!")
     
     if now.hour == 12 and now.minute == 0 and now.second == 0:
-            for ch in channels:
-                await ch.send("구닌들 폰 내는시간ㅠㅠ")
+        for ch in channels:
+            await ch.send("구닌들 폰 내는시간ㅠㅠ")
 
     if now.hour == 13 and now.minute == 13 and now.second == 0:
-            for ch in channels:
-                await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
+        for ch in channels:
+            await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
 
     if now.hour == 22 and now.minute == 0 and now.second == 0:
-            for ch in channels:
-                await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
+        for ch in channels:
+            await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
     
     if now.second == 0:
-            for ch in channels:
-                await ch.send("성공!!")
+        for ch in channels:
+            await ch.send("성공!!")
 
 channels_500x_enabled = []
 
