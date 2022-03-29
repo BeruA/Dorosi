@@ -76,6 +76,7 @@ async def time_check():
             
 
 channels_500x_enabled = []
+global a
 a = 0
 
 @client.event
