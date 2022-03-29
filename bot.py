@@ -21,10 +21,24 @@ client = discord.Client(
 async def every_hour_notice(self):
     ch1 = client.get_channel(810490718979489845)
     ch2 = client.get_channel(772475285320237069)
-    ch3 = client.get_channel(853846368870596688)
-    if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 23 and datetime.datetime.now().second == 0:
-        await ch1.send("폰 받는 시간!!!")
+    ch3 = client.get_channel(847126893534117890)
+    if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+        await ch1.send("https://youtu.be/H04dl1te52Q")
+        await ch2.send("https://youtu.be/H04dl1te52Q")
+        await ch3.send("https://youtu.be/H04dl1te52Q")
         time.sleep(1)
+
+    if datetime.datetime.now().hour == 8 and datetime.datetime.now().minute == 30 and datetime.datetime.now().second == 0:
+            await ch1.send("구닌들 폰 받는시간!!")
+            await ch2.send("구닌들 폰 받는시간!!")
+            await ch3.send("구닌들 폰 받는시간!!")
+            time.sleep(1)
+
+    if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+                await ch1.send("구닌들 폰 내는시간ㅠ")
+                await ch2.send("구닌들 폰 내는시간ㅠ")
+                await ch3.send("구닌들 폰 내는시간ㅠ")
+                time.sleep(1)
 
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
@@ -61,9 +75,6 @@ async def on_message(message):
     if message.author.bot:
         return None
     
-    if message.content == ('크로니테스트'):
-        await channel.send("현재 {}시 {}분 입니다.".format(datetime.datetime.now().hour, datetime.datetime.now().minute))
-
     if '킥' in message.content:                
         if not message.mentions:
             return
