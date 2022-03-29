@@ -79,24 +79,23 @@ channels_500x_enabled = []
 
 @client.event
 async def on_message(message):
+    
     global is_500x_enabled
     channel = message.channel
+    
+    if randint(1, 1000) == 1:
+        await message.delete()
+        await channel.send('축하합니다! 당신은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!')
+    else:
+        return
 
     if message.author.bot:
-        return None
+        return
         
     if message.content == ('에고'):
         await message.delete()
         await channel.send('https://media.discordapp.net/attachments/956643812883697704/958361371416879214/IMG_3016.png')
         await channel.send('아첨해대는그모습구역질이날것같아시니컬한시선의비오늘도두눈을닫는척')
-
-    if (' ') in message.content:
-        p = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'm', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-        if random.choice(p) == ('a'):
-            await message.delete()
-            await channel.send('축하합니다! 당신은 5% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!')
-        else:
-            return
 
     if '킥' in message.content:                
         if not message.mentions:
