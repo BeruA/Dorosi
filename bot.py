@@ -32,7 +32,7 @@ async def every_hour_notice(self):
         await ch1.send("구닌들 폰 받는시간!!")
         await ch2.send("구닌들 폰 받는시간!!")
         await ch3.send("구닌들 폰 받는시간!!")
-            time.sleep(1)
+        time.sleep(1)
 
     if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("구닌들 폰 내는시간ㅠ")
