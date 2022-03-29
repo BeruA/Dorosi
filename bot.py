@@ -8,6 +8,7 @@ import shutil
 import schedule
 import time
 import datetime
+import itertools
 from discord.ext import tasks
 
 from google_images_download import google_images_download
@@ -40,8 +41,7 @@ async def on_ready():
     
 @tasks.loop(seconds=5)
 async def change_sex():
-    bozi = ["마감", "섹스", "운전", "화공", "하는 중 하는 중 하는 중 하는 중 하는 중"]
-    sex = random.choice(bozi)
+    sex = itertools.cycle(["마감", "섹스", "운전", "화공", "하는 중 하는 중 하는 중 하는 중 하는 중"])
     await client.change_presence(activity=discord.Game(next(sex)))
 
 @tasks.loop(seconds=1)
