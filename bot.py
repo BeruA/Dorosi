@@ -66,9 +66,9 @@ async def time_check():
             await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
 
 channels_500x_enabled = []
-dai = dt.datetime.now(tz=KST).day
 a = 0
 KST=dt.timezone(dt.timedelta(hours=9))
+dai = dt.datetime.now(tz=KST).day
 
 @client.event
 async def on_message(message):
