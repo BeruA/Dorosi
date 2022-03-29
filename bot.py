@@ -36,6 +36,13 @@ async def bt(games):
 
 channels_500x_enabled = []
 
+def go():
+    channel=client.get_channel(810490718979489845)
+    await channel.send('폰 불출 시간!!!')
+    
+schedule.every().monday.at("17:30").do(go)
+schedule.every().tuesday.at("15:40").do(go)
+
 @client.event
 async def on_message(message):
     channel = message.channel
@@ -43,12 +50,6 @@ async def on_message(message):
 
     if message.author.bot:
         return None
-
-    if message.content == '여기다가 알림':
-        def go():
-            await channel.send('폰 불출 시간!!!')
-        schedule.every().monday.at("17:30").do(go)
-        schedule.every().tuesday.at("17:30").do(go)
 
     if '킥' in message.content:                
         if not message.mentions:
