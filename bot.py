@@ -45,7 +45,7 @@ async def job():
     schedule.every().tuesday.at("16:00").do(job)
 
     while True:
-       schedule.run_pending()
+        schedule.run_pending()
         time.sleep(1)
 
 @client.event
