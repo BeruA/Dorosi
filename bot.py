@@ -18,11 +18,11 @@ client = discord.Client(
 )
 
 @tasks.loop(seconds=1)
-ch1 = client.get_channel(810490718979489845)
-ch2 = client.get_channel(772475285320237069)
-ch3 = client.get_channel(853846368870596688)
 async def every_hour_notice(self):
-    if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 20 and datetime.datetime.now().second == 0:
+    ch1 = client.get_channel(810490718979489845)
+    ch2 = client.get_channel(772475285320237069)
+    ch3 = client.get_channel(853846368870596688)
+    if datetime.datetime.now().hour == 18 and datetime.datetime.now().minute == 23 and datetime.datetime.now().second == 0:
         await ch1.send("폰 받는 시간!!!")
         time.sleep(1)
 
@@ -33,7 +33,6 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-    
     ch1 = client.get_channel(810490718979489845)
     ch2 = client.get_channel(772475285320237069)
     ch3 = client.get_channel(853846368870596688)
