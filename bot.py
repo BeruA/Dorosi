@@ -78,17 +78,11 @@ channels_500x_enabled = []
 
 @client.event
 async def on_message(message):
-    mc = message.content
-    mcs = message.channel.send
     global is_500x_enabled
 
     if message.author.bot:
         return None
-        
-    if mc == ('크로테스트'):
-        now = datetime.datetime.now()
-        await mcs(f"{now.hour}시 {now.minute}분이다!!")
-    
+
     if '킥' in message.content:                
         if not message.mentions:
             return
