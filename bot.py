@@ -23,9 +23,6 @@ async def on_ready():
     print(client.user.id)
     print("================")
     
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
-    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
-    
     ch1 = client.get_channel(810490718979489845)
     await ch1.send('크로니콥터가 착륙했어!')
     
@@ -39,6 +36,9 @@ async def on_ready():
     while True:
         schedule.run_pending()
         asyncio.sleep(1)
+        
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
+    await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
 
 async def bt(games):
     await client.wait_until_ready()
@@ -57,16 +57,12 @@ async def on_message(message):
 
     if message.author.bot:
         return None
-        
-    if message.content == ('크로니테스트'):
-        ch1 = client.get_channel(810490718979489845)
-        await ch1.send('크로니콥터가 착륙했어!')
-    
+
     if '킥' in message.content:                
         if not message.mentions:
             return
         target = message.mentions[0]
-        msg = await channel.send(target.mention + " 추방 투표!!!")
+        msg = channel.send(target.mention + " 추방 투표!!!")
         await msg.add_reaction("🦶") #step
         await msg.add_reaction("💢") #stun
 
