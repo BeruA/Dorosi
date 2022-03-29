@@ -24,14 +24,17 @@ async def on_ready():
     print("================")
     
     ch1 = client.get_channel(810490718979489845)
+    ch2 = client.get_channel(772475285320237069)
+    ch3 = client.get_channel(853846368870596688)
     await ch1.send('크로니콥터가 착륙했어!')
+    await ch2.send('크로니콥터가 착륙했어!')
+    await ch3.send('크로니콥터가 착륙했어!')
     
     async def job():
-        ch = client.get_channel(810490718979489845)
-        await ch.send('폰 불출 시간!!!')
+        await ch1.send('폰 불출 시간!!!')
         
     schedule.every().monday.at("17:30").do(job)
-    schedule.every(10).second.do(job)
+    await schedule.every(10).second.do(job)
             
     while True:
         schedule.run_pending()
