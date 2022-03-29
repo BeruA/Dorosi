@@ -53,33 +53,27 @@ async def time(self):
         await ch1.send("https://youtu.be/H04dl1te52Q")
         await ch2.send("https://youtu.be/H04dl1te52Q")
         await ch3.send("https://youtu.be/H04dl1te52Q")
-        time.sleep(1)
 
     if datetime.datetime.now().hour == 8 and datetime.datetime.now().minute == 30 and datetime.datetime.now().second == 0:
         await ch1.send("구닌들 폰 받는시간!!")
         await ch2.send("구닌들 폰 받는시간!!")
         await ch3.send("구닌들 폰 받는시간!!")
-        time.sleep(1)
 
-    if datetime.datetime.now().hour == 13 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("구닌들 폰 내는시간ㅠ")
         await ch2.send("구닌들 폰 내는시간ㅠ")
         await ch3.send("구닌들 폰 내는시간ㅠ")
-        time.sleep(1)
 
-    if datetime.datetime.now().hour == 14 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
+    if datetime.datetime.now().hour == 13 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
         await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
-        time.sleep(1)
 
     if datetime.datetime.now().hour == 22 and datetime.datetime.now().minute == 0 and datetime.datetime.now().second == 0:
         await ch1.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
         await ch2.send("https://media.discordapp.net/attachments/803945796151279636/958309862691975198/IMG_2996.png")
-        time.sleep(1)
  
     if datetime.datetime.now().minute == 1 and datetime.datetime.now().second == 0:
         await ch2.send("테스트ㅇ")
-        time.sleep(3)
 
 channels_500x_enabled = []
 
@@ -528,7 +522,6 @@ async def on_reaction_add(reaction, user):
         await reaction.message.channel.send("https://youtu.be/hlR45geEIpY")
     if str(reaction.emoji) == "🇨🇳":
         await reaction.message.channel.send("https://cdn.discordapp.com/attachments/884787722819092521/908537510974615572/SPOILER_super_idol_.mp4")
-
 
 TOKEN = os.getenv('BOT_TOKEN')
 client.run(TOKEN)
