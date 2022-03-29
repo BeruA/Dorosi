@@ -5,6 +5,8 @@ import time
 import os
 import io
 import shutil
+import schedule
+import time
 
 from google_images_download import google_images_download
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -41,6 +43,12 @@ async def on_message(message):
 
     if message.author.bot:
         return None
+
+    if message.content == '여기다가 알림':
+        def go():
+            await channel.send('폰 불출 시간!!!')
+        schedule.every().monday.at("17:30").do(go)
+        schedule.every().tuesday.at("17:30").do(go)
 
     if '킥' in message.content:                
         if not message.mentions:
