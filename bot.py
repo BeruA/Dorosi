@@ -76,12 +76,17 @@ async def time_check():
             
 
 channels_500x_enabled = []
+a = 0
 
 @client.event
 async def on_message(message):
     
+    a = a+1
     global is_500x_enabled
     channel = message.channel
+    
+    if a == 7:
+        await channel.send('축하합니다! 당신이 친 체팅은 오늘의 777번째 체팅!!!!!!!!')
     
     if randint(1, 1000) == 1:
         await message.delete()
