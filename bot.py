@@ -80,6 +80,7 @@ channels_500x_enabled = []
 @client.event
 async def on_message(message):
     global is_500x_enabled
+    channel = message.channel
 
     if message.author.bot:
         return None
