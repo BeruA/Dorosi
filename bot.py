@@ -36,16 +36,17 @@ async def bt(games):
 
 channels_500x_enabled = []
 
-def job():
+@client.event
+async def job():
     channel=client.get_channel(810490718979489845)
-    channel.send('폰 불출 시간!!!')
+    await channel.send('폰 불출 시간!!!')
     
-schedule.every().monday.at("17:30").do(job)
-schedule.every().tuesday.at("15:50").do(job)
+    schedule.every().monday.at("17:30").do(job)
+    schedule.every().tuesday.at("16:00").do(job)
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+    while True:
+       schedule.run_pending()
+        time.sleep(1)
 
 @client.event
 async def on_message(message):
