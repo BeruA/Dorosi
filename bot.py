@@ -41,7 +41,7 @@ def job():
     channel.send('폰 불출 시간!!!')
     
 schedule.every().monday.at("17:30").do(job)
-schedule.every().tuesday.at("15:48").do(job)
+schedule.every().tuesday.at("15:50").do(job)
 
 while True:
     schedule.run_pending()
