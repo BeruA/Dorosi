@@ -24,6 +24,7 @@ async def on_ready():
     print("================")
     await client.change_presence(status=discord.Status.idle, activity=discord.Game('상태메시지'))
     await bt(['마감', '숙면', '식사', '하는 중 하는 중 하는 중 하는 중', '게임', '화공', '도발', '섹스'])
+    await client.get_chaanels('810490718979489845').send('크로니콥터가 착륙했어!')
     def job():
         channel = client.get_channels('810490718979489845')
         channel.send('폰 불출 시간!!!')
