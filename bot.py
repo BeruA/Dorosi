@@ -167,7 +167,7 @@ async def on_message(message):
         anserresult = anserchoice[ansernumber - 1]
         await channel.send(anserresult)
         
-    if '추워' message.content:
+    if '추워' in message.content:
         await chennel.send('https://media.discordapp.net/attachments/772475285320237069/958643357083635722/unknown.png')
 
     if '배호' in message.content:
