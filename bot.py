@@ -90,7 +90,7 @@ async def on_message(message):
 
     if randint(1, 1000) == 1:
         await message.delete()
-        await channel.send('축하합니다! 당신은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!')
+        await channel.send("축하합니다!" + message.author.mention + "님은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!")
 
     if message.author.bot:
         return
@@ -148,9 +148,10 @@ async def on_message(message):
             return
 
         target = message.mentions[0]
-        msg = await message.channel.send(target.mention + " 사랑해💕💕")
+        await message.deletr()
+        msg = await message.channel.send({message.author.mention} + "님이" + target.mention + " 님을 사랑해💕💕")
         await asyncio.sleep(5)
-        await msg.edit(content=target.mention + " 사망해💀💀")
+        await msg.edit(content=target.mention + " 님, 사망해💀💀")
 
     if '신보물섬' in message.content:
         anser = "https://media.discordapp.net/attachments/812665665437696020/898653973278519296/Screenshot_20210601-010856_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/898653973018464286/Screenshot_20210601-010649_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/898653972775182336/Screenshot_20210601-010451_Discord-Beta.jpg https://media.discordapp.net/attachments/812665665437696020/848574318635646976/image0.png https://twitter.com/kimsmokestack/status/1377980907651407875?s=20 https://media.discordapp.net/attachments/812665665437696020/828185570807250944/unknown.png https://media.discordapp.net/attachments/812665665437696020/825590522092453928/unknown.png"
