@@ -57,7 +57,7 @@ async def time_check():
         for ch in channels:
             await ch.send("구닌들 폰 내는시간ㅠㅠ")
 
-    if now.hour == 13 and now.minute == 13 and now.second == 0:
+    if now.hour == 13 and now.minute == 0 and now.second == 0:
         for ch in channels:
             await ch.send("https://media.discordapp.net/attachments/803945796151279636/958309861903458324/IMG_2999.png")
 
