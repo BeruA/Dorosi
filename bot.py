@@ -166,6 +166,9 @@ async def on_message(message):
         ansernumber = random.randint(1, len(anserchoice))
         anserresult = anserchoice[ansernumber - 1]
         await channel.send(anserresult)
+        
+    if '추워' message.content:
+        await chennel.send('https://media.discordapp.net/attachments/772475285320237069/958643357083635722/unknown.png')
 
     if '배호' in message.content:
         anser = "멀라훕! https://media.discordapp.net/attachments/797862892291751978/798195017416048651/ErctcYFVgAA_BsH.png https://media.discordapp.net/attachments/889488917278113792/889941784078204938/unknown-462.png https://media.discordapp.net/attachments/812665665437696020/909799908138156062/Screenshot_20211115-022709_YouTube.png https://media.discordapp.net/attachments/812665665437696020/856145724789358592/unknown.png https://media.discordapp.net/attachments/812665665437696020/846007050873602058/unknown.png"
