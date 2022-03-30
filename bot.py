@@ -148,7 +148,7 @@ async def on_message(message):
             return
 
         target = message.mentions[0]
-        await message.deletr()
+        await message.delete()
         msg = await message.channel.send({message.author.mention} + "님이" + target.mention + " 님을 사랑해💕💕")
         await asyncio.sleep(5)
         await msg.edit(content=target.mention + " 님, 사망해💀💀")
