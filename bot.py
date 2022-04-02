@@ -33,7 +33,7 @@ async def on_ready():
     now = dt.datetime.now()
     
     for ch in channels:
-        await ch.send("크로니콥터가 착륙했어!\n\n**패치노트**\n>>> '혼자'명령어 교체")
+        await ch.send("크로니콥터가 착륙했어!\n\n**패치노트**\n>>> '엄마'명령어 교체\n'레드존'명령어'교체\n'히나'명령어 교체")
     time_check.start()
     change_sex.start()
     
@@ -240,7 +240,7 @@ async def on_message(message):
     if '곰' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/816677434866270258/Screenshot_20210303-232421_Discord.jpg')
 
-    if '엄마' in message.content:
+    if '엄마부족' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/821039634528206888/unknown-221.png')
 
     if '북두' in message.content:
@@ -438,7 +438,7 @@ async def on_message(message):
     if '노홍철' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/825755424404799488/EwBRceUVEAIcEJi.png')
 
-    if '나이' in message.content:
+    if '년생' in message.content:
         if '나이스' in message.content:
             return
         else:
@@ -504,7 +504,7 @@ async def on_message(message):
     if '선풍기' in message.content:
         await channel.send('https://cdn.discordapp.com/attachments/854352795813150740/866932414286528552/VID-20210630-WA0017.mp4')
 
-    if '히나' in message.content:
+    if '찬민' in message.content:
         await channel.send('https://media.discordapp.net/attachments/810490718979489845/948168546008051762/Screenshot_20201102-222800_YouTube.jpg')
 
     if '다천사' in message.content:
