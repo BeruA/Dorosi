@@ -23,8 +23,14 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-
-    ch = client.get_channel(853846368870596688)
+    
+    ids = [
+            810490718979489845,
+            772475285320237069,
+            847126893534117890,
+        ]
+        channels = [client.get_channel(id) for id in ids]  
+        now = dt.datetime.now()
 
     await ch.send("크로니콥터가 착륙했어!/n/n**패치노트**/n>>>[혼자]명령어 교체)
     time_check.start()
