@@ -27,13 +27,13 @@ async def on_ready():
     ids = [
             810490718979489845,
             772475285320237069,
-            847126893534117890,
+            853846368870596688,
         ]
     channels = [client.get_channel(id) for id in ids]  
     now = dt.datetime.now()
     
     for ch in channels:
-        await ch.send("크로니콥터가 착륙했어!/n/n**패치노트**/n>>>|혼자|명령어 교체")
+        await ch.send("크로니콥터가 착륙했어!\n**패치노트**\n>>>|혼자|명령어 교체")
     time_check.start()
     change_sex.start()
     
