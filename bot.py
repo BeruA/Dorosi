@@ -26,7 +26,7 @@ async def on_ready():
 
     ch = client.get_channel(853846368870596688)
 
-    await ch.send("크로니콥터가 착륙했어!")
+    await ch.send("크로니콥터가 착륙했어!/n/n**패치노트**/n>>>[혼자]명령어 교체)
     time_check.start()
     change_sex.start()
     
@@ -254,7 +254,7 @@ async def on_message(message):
     if '운지' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/846007444416364554/-Xz6gjxfSwWEPbJGvTom6JJKeWdkXOl3QT2sWYPvGMUJnH2k0iMq501t4dzVsosJPqmGQ8S3R6-4LaRZv9EqF9nEQhdpoy4L_nn-.png')
 
-    if '혼자' in message.content:
+    if '크리스마스' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/848574228830617610/image0.png')
     
     if '내신' in message.content:
