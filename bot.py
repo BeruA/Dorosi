@@ -348,7 +348,7 @@ async def on_message(message):
     if '포켓몬' in message.content:
         await channel.send('https://media.discordapp.net/attachments/812665665437696020/894395903811649546/Untitled-1.png')
 
-    if '레드존' in message.content:
+    if '테크닉' in message.content:
         await channel.send('https://cdn.discordapp.com/attachments/856781757546102795/896473145890979860/ertert-1.mp4')
 
     if '지메' in message.content:
