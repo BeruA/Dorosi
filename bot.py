@@ -33,7 +33,7 @@ async def on_ready():
     now = dt.datetime.now()
     
     for ch in channels:
-        await ch.send("크로니콥터가 착륙했어!\n**패치노트**\n>>> '혼자'명령어 교체")
+        await ch.send("크로니콥터가 착륙했어!\n\n**패치노트**\n>>> '혼자'명령어 교체")
     time_check.start()
     change_sex.start()
     
