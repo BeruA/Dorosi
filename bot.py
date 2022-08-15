@@ -96,7 +96,7 @@ async def on_message(message):
         return
     
     if '테스트' in message.content:
-        await channel.send('섹스')
+        await channel.send('섹x스')
 
     if '오백배' in message.content:
         if not message.mentions:
