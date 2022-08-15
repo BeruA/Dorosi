@@ -118,10 +118,9 @@ async def on_message(message):
         await channel.send("뭐가 나올까? 두구두구두구..")
         time.sleep(3.0)
         anser = "응가 https://media.discordapp.net/attachments/812665665437696020/1008500266347274270/FaceApp_1639364043809.jpg https://media.discordapp.net/attachments/812665665437696020/816677434866270258/Screenshot_20210303-232421_Discord.jpg https://media.discordapp.net/attachments/810490718979489845/812665575116767242/unknown.png https://media.discordapp.net/attachments/810490718979489845/814660396182798357/Screenshot_20210226-094921_Discord.jpg https://media.discordapp.net/attachments/812665665437696020/821039634528206888/unknown-221.png https://media.discordapp.net/attachments/812665665437696020/822043886247084062/EvTv-Z1VgAIHSSb.png"
-        anserchoice = anser.split(" ")
-        ansernumber = random.randint(1, len(anserchoice))
-        anserresult = anserchoice[ansernumber - 1]
-        await channel.send(anserresult)
+        ac = anser.split(" ")
+        go = random.choices(ac)
+        await channel.send(go)
 
 TOKEN = os.getenv('BOT_TOKEN')
 client.run(TOKEN)
