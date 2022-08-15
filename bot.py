@@ -45,11 +45,11 @@ async def time_check():
         for ch in channels:
             await ch.send("https://youtu.be/H04dl1te52Q")
 
-    if now.hour == 8 and now.minute == 30 and now.second == 0:
+    if now.hour == 7 and now.minute == 30 and now.second == 0:
         for ch in channels:
             await ch.send("구닌들 폰 받는시간!!")
     
-    if now.hour == 12 and now.minute == 0 and now.second == 0:
+    if now.hour == 11 and now.minute == 0 and now.second == 0:
         for ch in channels:
             await ch.send("구닌들 폰 내는시간ㅠㅠ")
 
@@ -87,6 +87,10 @@ async def on_message(message):
     if randint(1, 1000) == 1:
         await message.delete()
         await channel.send("축하합니다!" + message.author.mention + "님은 0.1% 확률에 걸렸습니다! 다음엔 조용히 얘기해주세요!!!!!")
+    
+    if randint(10000, 20000) == 10001:
+            await message.delete()
+            await channel.send("축하합니다!" + message.author.mention + "님은 0.01% 확률에 걸렸습니다ㅋㅋㅋㅋㅋ 이게 걸리네 병신새낔!")
 
     if message.author.bot:
         return
@@ -107,6 +111,13 @@ async def on_message(message):
         await channel.send('ㅈㅅ')
         channels_500x_enabled.remove(channel)
         return
+    
+    if message.content.startswith('야! 조배호'):
+        anser = "강태산이넘!!!!!!!!!!!!! 오허어ㄲㅈ 멀라훕!!!!! 아이탈당이라니 축하해요ㅎㅎㅎㅎ 음~ 법적으로처리해!"
+        anserchoice = anser.split(" ")
+        ansernumber = random.randint(1, len(anserchoice))
+        anserresult = anserchoice[ansernumber - 1]
+        await channel.send(anserresult)
 
 TOKEN = os.getenv('BOT_TOKEN')
 client.run(TOKEN)
