@@ -123,7 +123,8 @@ async def on_message(message):
         anser = '응가 https://media.discordapp.net/attachments/812665665437696020/1008500266347274270/FaceApp_1639364043809.jpg https://media.discordapp.net/attachments/812665665437696020/816677434866270258/Screenshot_20210303-232421_Discord.jpg https://media.discordapp.net/attachments/810490718979489845/812665575116767242/unknown.png https://media.discordapp.net/attachments/810490718979489845/814660396182798357/Screenshot_20210226-094921_Discord.jpg https://media.discordapp.net/attachments/812665665437696020/821039634528206888/unknown-221.png https://media.discordapp.net/attachments/812665665437696020/822043886247084062/EvTv-Z1VgAIHSSb.png'
         ac = anser.split(" ")
         go = random.choices(ac)
-        await channel.send(go)
+        sex = go[2:2]
+        await channel.send(sex)
 
 TOKEN = os.getenv('BOT_TOKEN')
 client.run(TOKEN)
