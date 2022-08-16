@@ -96,7 +96,7 @@ async def on_message(message):
         return
     
     if '테스트' in message.content:
-        await channel.send('뿌직')
+        await channel.send('카캇테코이야이야이야')
 
     if '오벡배' in message.content:
         if not message.mentions:
