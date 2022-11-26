@@ -116,6 +116,13 @@ async def on_message(message):
         return
     
     if '구론희뽑기' in message.content:
+            await channel.send("구론희의 뽑기 타임!!")
+            time.sleep(2.0)
+            await channel.send("뭐가 나올까? 두구두구두구..")
+            time.sleep(3.0)
+            await channel.send("https://media.discordapp.net/attachments/860770065568890881/1046006159934492672/20221126_190239.mp4")
+    
+    if '구론희 뽑기' in message.content:
         await channel.send("구론희의 뽑기 타임!!")
         time.sleep(2.0)
         await channel.send("뭐가 나올까? 두구두구두구..")
